@@ -22,6 +22,7 @@ class EntityFactory extends Factory
             'description' => fake()->sentence(),
             'source_url' => fake()->url(),
             'metadata' => [],
+            'images' => [],
             'provider' => 'factory',
         ];
     }
