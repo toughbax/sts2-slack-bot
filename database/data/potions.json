@@ -1,0 +1,695 @@
+[
+    {
+        "type": "potion",
+        "name": "Ashwater",
+        "slug": "ashwater",
+        "description": "Exhaust any number of cards in your Hand.",
+        "source_url": "https://sts2.untapped.gg/en/potions/ashwater",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Ironclad"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Attack Potion",
+        "slug": "attack-potion",
+        "description": "Choose 1 of 3 random Attack cards to add into your Hand. It's free to play this turn.",
+        "source_url": "https://sts2.untapped.gg/en/potions/attack-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Beetle Juice",
+        "slug": "beetle-juice",
+        "description": "Enemy's attacks deal 30% less damage for the next 4 turns.",
+        "source_url": "https://sts2.untapped.gg/en/potions/beetle-juice",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Blessing of the Forge",
+        "slug": "blessing-of-the-forge",
+        "description": "Upgrade all cards in your Hand for the rest of combat.",
+        "source_url": "https://sts2.untapped.gg/en/potions/blessing-of-the-forge",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Block Potion",
+        "slug": "block-potion",
+        "description": "Gain 12 Block.",
+        "source_url": "https://sts2.untapped.gg/en/potions/block-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Blood Potion",
+        "slug": "blood-potion",
+        "description": "Heal for 20% of your Max HP.",
+        "source_url": "https://sts2.untapped.gg/en/potions/blood-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Ironclad"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Bone Brew",
+        "slug": "bone-brew",
+        "description": "Summon 15.",
+        "source_url": "https://sts2.untapped.gg/en/potions/bone-brew",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Necrobinder"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Bottled Potential",
+        "slug": "bottled-potential",
+        "description": "Shuffle ALL your cards into your Draw Pile. Draw 5 cards.",
+        "source_url": "https://sts2.untapped.gg/en/potions/bottled-potential",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Clarity Extract",
+        "slug": "clarity",
+        "description": "Draw 1 card. At the start of your next 3 turns, draw 1 additional card.",
+        "source_url": "https://sts2.untapped.gg/en/potions/clarity",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Colorless Potion",
+        "slug": "colorless-potion",
+        "description": "Choose 1 of 3 random Colorless cards to add into your Hand. It's free to play this turn.",
+        "source_url": "https://sts2.untapped.gg/en/potions/colorless-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Cosmic Concoction",
+        "slug": "cosmic-concoction",
+        "description": "Add 3 Upgraded Colorless cards into your Hand.",
+        "source_url": "https://sts2.untapped.gg/en/potions/cosmic-concoction",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Regent"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Cunning Potion",
+        "slug": "cunning-potion",
+        "description": "Add 3 Upgraded Shivs into your Hand.",
+        "source_url": "https://sts2.untapped.gg/en/potions/cunning-potion",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Silent"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Cure All",
+        "slug": "cure-all",
+        "description": "Gain 1 Energy. Draw 2 cards.",
+        "source_url": "https://sts2.untapped.gg/en/potions/cure-all",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Dexterity Potion",
+        "slug": "dexterity-potion",
+        "description": "Gain 2 Dexterity.",
+        "source_url": "https://sts2.untapped.gg/en/potions/dexterity-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Distilled Chaos",
+        "slug": "distilled-chaos",
+        "description": "Play the top 3 cards of your Draw Pile.",
+        "source_url": "https://sts2.untapped.gg/en/potions/distilled-chaos",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Droplet of Precognition",
+        "slug": "droplet-of-precognition",
+        "description": "Choose a card in your Draw Pile and add it into your Hand.",
+        "source_url": "https://sts2.untapped.gg/en/potions/droplet-of-precognition",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Duplicator",
+        "slug": "duplicator",
+        "description": "This turn, your next card is played an extra time.",
+        "source_url": "https://sts2.untapped.gg/en/potions/duplicator",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Energy Potion",
+        "slug": "energy-potion",
+        "description": "Gain 2 Energy.",
+        "source_url": "https://sts2.untapped.gg/en/potions/energy-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Entropic Brew",
+        "slug": "entropic-brew",
+        "description": "Fill all your empty potion slots with random potions.",
+        "source_url": "https://sts2.untapped.gg/en/potions/entropic-brew",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Essence of Darkness",
+        "slug": "essence-of-darkness",
+        "description": "Channel a Dark for each of your Orb Slots.",
+        "source_url": "https://sts2.untapped.gg/en/potions/essence-of-darkness",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Defect"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Explosive Ampoule",
+        "slug": "explosive-ampoule",
+        "description": "Deal 10 damage to ALL enemies.",
+        "source_url": "https://sts2.untapped.gg/en/potions/explosive-ampoule",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Fairy in a Bottle",
+        "slug": "fairy-in-a-bottle",
+        "description": "When your HP would be reduced to 0, instead this potion is discarded and you heal to 30% of your Max HP.",
+        "source_url": "https://sts2.untapped.gg/en/potions/fairy-in-a-bottle",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Fire Potion",
+        "slug": "fire-potion",
+        "description": "Deal 20 damage.",
+        "source_url": "https://sts2.untapped.gg/en/potions/fire-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Flex Potion",
+        "slug": "flex-potion",
+        "description": "Gain 5 Strength. At the end of your turn, lose 5 Strength.",
+        "source_url": "https://sts2.untapped.gg/en/potions/flex-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Focus Potion",
+        "slug": "focus-potion",
+        "description": "Gain 2 Focus.",
+        "source_url": "https://sts2.untapped.gg/en/potions/focus-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Defect"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Fortifier",
+        "slug": "fortifier",
+        "description": "Triple your Block.",
+        "source_url": "https://sts2.untapped.gg/en/potions/fortifier",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Foul Potion",
+        "slug": "foul-potion",
+        "description": "Deal 12 damage to ALL players and enemies. Can be thrown at the Merchant for 100 Gold instead.",
+        "source_url": "https://sts2.untapped.gg/en/potions/foul-potion",
+        "metadata": {
+            "rarity": "Event",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Fruit Juice",
+        "slug": "fruit-juice",
+        "description": "Gain 5 Max HP.",
+        "source_url": "https://sts2.untapped.gg/en/potions/fruit-juice",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Fysh Oil",
+        "slug": "fysh-oil",
+        "description": "Gain 1 Strength and 1 Dexterity.",
+        "source_url": "https://sts2.untapped.gg/en/potions/fysh-oil",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Gambler's Brew",
+        "slug": "gamblers-brew",
+        "description": "Discard any number of cards, then draw that many.",
+        "source_url": "https://sts2.untapped.gg/en/potions/gamblers-brew",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Ghost in a Jar",
+        "slug": "ghost-in-a-jar",
+        "description": "Gain 1 Intangible.",
+        "source_url": "https://sts2.untapped.gg/en/potions/ghost-in-a-jar",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Silent"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Gigantification Potion",
+        "slug": "gigantification-potion",
+        "description": "The next Attack you play deals triple damage.",
+        "source_url": "https://sts2.untapped.gg/en/potions/gigantification-potion",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Glowwater Potion",
+        "slug": "glowwater-potion",
+        "description": "Exhaust your Hand. Draw 10 cards.",
+        "source_url": "https://sts2.untapped.gg/en/potions/glowwater-potion",
+        "metadata": {
+            "rarity": "Event",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Heart of Iron",
+        "slug": "heart-of-iron",
+        "description": "Gain 7 Plating.",
+        "source_url": "https://sts2.untapped.gg/en/potions/heart-of-iron",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "King's Courage",
+        "slug": "kings-courage",
+        "description": "Forge 15.",
+        "source_url": "https://sts2.untapped.gg/en/potions/kings-courage",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Regent"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Liquid Bronze",
+        "slug": "liquid-bronze",
+        "description": "Gain 3 Thorns.",
+        "source_url": "https://sts2.untapped.gg/en/potions/liquid-bronze",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Liquid Memories",
+        "slug": "liquid-memories",
+        "description": "Put a card from your Discard Pile into your Hand. It's free to play this turn.",
+        "source_url": "https://sts2.untapped.gg/en/potions/liquid-memories",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Lucky Tonic",
+        "slug": "lucky-tonic",
+        "description": "Gain 1 Buffer.",
+        "source_url": "https://sts2.untapped.gg/en/potions/lucky-tonic",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Mazaleth's Gift",
+        "slug": "mazaleths-gift",
+        "description": "Gain 1 Ritual.",
+        "source_url": "https://sts2.untapped.gg/en/potions/mazaleths-gift",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Orobic Acid",
+        "slug": "orobic-acid",
+        "description": "Add a random Attack, Skill, and Power into your Hand. They're free to play this turn.",
+        "source_url": "https://sts2.untapped.gg/en/potions/orobic-acid",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Poison Potion",
+        "slug": "poison-potion",
+        "description": "Apply 6 Poison.",
+        "source_url": "https://sts2.untapped.gg/en/potions/poison-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Silent"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Pot of Ghouls",
+        "slug": "pot-of-ghouls",
+        "description": "Add 2 Souls into your Hand.",
+        "source_url": "https://sts2.untapped.gg/en/potions/pot-of-ghouls",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Necrobinder"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Potion of Binding",
+        "slug": "potion-of-binding",
+        "description": "Apply 1 Weak and 1 Vulnerable to ALL enemies.",
+        "source_url": "https://sts2.untapped.gg/en/potions/potion-of-binding",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Potion of Capacity",
+        "slug": "potion-of-capacity",
+        "description": "Gain 2 Orb Slots.",
+        "source_url": "https://sts2.untapped.gg/en/potions/potion-of-capacity",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Defect"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Potion of Doom",
+        "slug": "potion-of-doom",
+        "description": "Apply 33 Doom.",
+        "source_url": "https://sts2.untapped.gg/en/potions/potion-of-doom",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Necrobinder"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Potion-Shaped Rock",
+        "slug": "potion-shaped-rock",
+        "description": "Deal 15 damage.",
+        "source_url": "https://sts2.untapped.gg/en/potions/potion-shaped-rock",
+        "metadata": {
+            "rarity": "Token",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Powdered Demise",
+        "slug": "powdered-demise",
+        "description": "Enemy loses 9 HP at the end of each of its turns.",
+        "source_url": "https://sts2.untapped.gg/en/potions/powdered-demise",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Power Potion",
+        "slug": "power-potion",
+        "description": "Choose 1 of 3 random Power cards to add into your Hand. It's free to play this turn.",
+        "source_url": "https://sts2.untapped.gg/en/potions/power-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Radiant Tincture",
+        "slug": "radiant-tincture",
+        "description": "Gain 1 Energy. Gain an additional 1 Energy at the start of your next 3 turns.",
+        "source_url": "https://sts2.untapped.gg/en/potions/radiant-tincture",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Regen Potion",
+        "slug": "regen-potion",
+        "description": "Gain 5 Regen.",
+        "source_url": "https://sts2.untapped.gg/en/potions/regen-potion",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Shackling Potion",
+        "slug": "shackling-potion",
+        "description": "ALL enemies lose 7 Strength this turn.",
+        "source_url": "https://sts2.untapped.gg/en/potions/shackling-potion",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Ship in a Bottle",
+        "slug": "ship-in-a-bottle",
+        "description": "Gain 10 Block. Next turn, gain 10 Block.",
+        "source_url": "https://sts2.untapped.gg/en/potions/ship-in-a-bottle",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Skill Potion",
+        "slug": "skill-potion",
+        "description": "Choose 1 of 3 random Skill cards to add into your Hand. It's free to play this turn.",
+        "source_url": "https://sts2.untapped.gg/en/potions/skill-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Snecko Oil",
+        "slug": "snecko-oil",
+        "description": "Draw 7 cards. Randomize the cost of cards in your Hand this turn.",
+        "source_url": "https://sts2.untapped.gg/en/potions/snecko-oil",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Soldier's Stew",
+        "slug": "soldiers-stew",
+        "description": "All cards containing Strike gain 1 Replay this combat.",
+        "source_url": "https://sts2.untapped.gg/en/potions/soldiers-stew",
+        "metadata": {
+            "rarity": "Rare",
+            "character": "Ironclad"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Speed Potion",
+        "slug": "speed-potion",
+        "description": "Gain 5 Dexterity. At the end of your turn, lose 5 Dexterity.",
+        "source_url": "https://sts2.untapped.gg/en/potions/speed-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Stable Serum",
+        "slug": "stable-serum",
+        "description": "Retain your Hand for 2 turns.",
+        "source_url": "https://sts2.untapped.gg/en/potions/stable-serum",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Star Potion",
+        "slug": "star-potion",
+        "description": "Gain 3 Stars.",
+        "source_url": "https://sts2.untapped.gg/en/potions/star-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Regent"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Strength Potion",
+        "slug": "strength-potion",
+        "description": "Gain 2 Strength.",
+        "source_url": "https://sts2.untapped.gg/en/potions/strength-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Swift Potion",
+        "slug": "swift-potion",
+        "description": "Draw 3 cards.",
+        "source_url": "https://sts2.untapped.gg/en/potions/swift-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Touch of Insanity",
+        "slug": "touch-of-insanity",
+        "description": "Choose a card in your Hand. It is free to play this combat.",
+        "source_url": "https://sts2.untapped.gg/en/potions/touch-of-insanity",
+        "metadata": {
+            "rarity": "Uncommon",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Vulnerable Potion",
+        "slug": "vulnerable-potion",
+        "description": "Apply 3 Vulnerable.",
+        "source_url": "https://sts2.untapped.gg/en/potions/vulnerable-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Colorless"
+        }
+    },
+    {
+        "type": "potion",
+        "name": "Weak Potion",
+        "slug": "weak-potion",
+        "description": "Apply 3 Weak.",
+        "source_url": "https://sts2.untapped.gg/en/potions/weak-potion",
+        "metadata": {
+            "rarity": "Common",
+            "character": "Colorless"
+        }
+    }
+]
