@@ -29,6 +29,20 @@ it('rejects a stale timestamp', function () {
         ->assertUnauthorized();
 });
 
+it('rejects a non-numeric timestamp', function () {
+    $this->postSlack('test-slack', ['text' => 'hi'], ['timestamp' => 'abc'])
+        ->assertUnauthorized();
+});
+
+it('rejects a far-future timestamp', function () {
+    $future = (string) now()->addMinutes(10)->getTimestamp();
+    $body = http_build_query(['text' => 'hi']);
+    $signature = 'v0='.hash_hmac('sha256', "v0:{$future}:{$body}", config('services.slack.signing_secret'));
+
+    $this->postSlack('test-slack', ['text' => 'hi'], ['timestamp' => $future, 'signature' => $signature])
+        ->assertUnauthorized();
+});
+
 it('rejects missing headers', function () {
     $this->post('test-slack', ['text' => 'hi'])->assertUnauthorized();
 });

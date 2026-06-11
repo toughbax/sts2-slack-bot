@@ -11,7 +11,11 @@ class VerifySlackSignature
     public function handle(Request $request, Closure $next): Response
     {
         $secret = config('services.slack.signing_secret');
-        abort_if(blank($secret), 500, 'Slack signing secret is not configured.');
+
+        if (blank($secret)) {
+            logger()->critical('SLACK_SIGNING_SECRET is not configured.');
+            abort(500);
+        }
 
         $timestamp = $request->header('X-Slack-Request-Timestamp');
         $signature = $request->header('X-Slack-Signature');
