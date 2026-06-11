@@ -39,6 +39,7 @@ class ImportEntities extends Command
                     'description' => $imported->description,
                     'source_url' => $imported->sourceUrl,
                     'metadata' => $imported->metadata,
+                    'images' => $imported->images,
                     'provider' => $provider->name(),
                 ],
             );
@@ -73,6 +74,7 @@ class ImportEntities extends Command
                     'description' => $entity->description,
                     'source_url' => $entity->source_url,
                     'metadata' => $entity->metadata ?? [],
+                    'images' => $entity->images ?? [],
                 ])->values();
 
                 $file = Str::plural($type).'.json';

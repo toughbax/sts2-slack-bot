@@ -8,6 +8,7 @@ final readonly class ImportedEntity
 {
     /**
      * @param  array<string, mixed>  $metadata
+     * @param  array<string, string>  $images
      */
     public function __construct(
         public EntityType $type,
@@ -16,5 +17,6 @@ final readonly class ImportedEntity
         public ?string $sourceUrl = null,
         public array $metadata = [],
         public ?string $slug = null,
+        public array $images = [],
     ) {}
 }

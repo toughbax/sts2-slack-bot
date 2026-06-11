@@ -15,7 +15,7 @@ function sitemapXml(string $section, array $slugs): string
     return '<?xml version="1.0" encoding="UTF-8"?><urlset>'.$urls.'</urlset>';
 }
 
-function detailHtml(string $title, ?string $metaDescription, ?string $flightDescription = null): string
+function detailHtml(string $title, ?string $metaDescription, ?string $flightDescription = null, array $imageUrls = []): string
 {
     $meta = $metaDescription !== null
         ? '<meta name="description" content="'.e($metaDescription).'"/>'
@@ -29,7 +29,12 @@ function detailHtml(string $title, ?string $metaDescription, ?string $flightDesc
         $flight = '<script>self.__next_f.push([1,'.$script.'])</script>';
     }
 
-    return "<html><head><title>{$title}</title>{$meta}</head><body>{$flight}</body></html>";
+    $imgs = '';
+    foreach ($imageUrls as $url) {
+        $imgs .= '<img src="'.$url.'"/>';
+    }
+
+    return "<html><head><title>{$title}</title>{$meta}</head><body>{$flight}{$imgs}</body></html>";
 }
 
 beforeEach(function () {
@@ -45,6 +50,12 @@ it('imports a card with parsed metadata', function () {
         BASE.'/en/cards/ball-lightning' => Http::response(detailHtml(
             'Ball Lightning – Defect Common Attack – Slay the Spire 2 Card – Untapped.gg',
             'Ball Lightning is a 1-Cost Common Attack card in the Defect pool: Deal 7 damage. Channel 1 Lightning.',
+            null,
+            [
+                'https://sts2json.untapped.gg/art/card_portraits/defect/ball_lightning.png',
+                'https://sts2json.untapped.gg/art/card_portraits/defect/all_for_one.png',
+                'https://img-preview.untapped.gg/sts2/en/cards/ball-lightning.webp',
+            ],
         )),
     ]);
 
@@ -62,6 +73,10 @@ it('imports a card with parsed metadata', function () {
             'rarity' => 'Common',
             'card_type' => 'Attack',
             'character' => 'Defect',
+        ])
+        ->images->toBe([
+            'portrait' => 'https://sts2json.untapped.gg/art/card_portraits/defect/ball_lightning.png',
+            'preview' => 'https://img-preview.untapped.gg/sts2/en/cards/ball-lightning.webp',
         ]);
 });
 
@@ -74,6 +89,8 @@ it('imports a relic and a potion with parsed metadata', function () {
         BASE.'/en/relics/akabeko' => Http::response(detailHtml(
             'Akabeko – Slay the Spire 2 Relic – Untapped.gg',
             'Akabeko is a Uncommon relic in the Colorless pool: At the start of each combat, gain 8 Vigor.',
+            null,
+            ['https://sts2json.untapped.gg/art/relics/akabeko.png'],
         )),
         BASE.'/en/potions/ashwater' => Http::response(detailHtml(
             'Ashwater – Slay the Spire 2 Potion – Untapped.gg',
@@ -88,9 +105,11 @@ it('imports a relic and a potion with parsed metadata', function () {
         ->type->toBe(EntityType::Relic)
         ->description->toBe('At the start of each combat, gain 8 Vigor.')
         ->metadata->toBe(['rarity' => 'Uncommon', 'character' => 'Colorless'])
+        ->images->toBe(['portrait' => 'https://sts2json.untapped.gg/art/relics/akabeko.png'])
         ->and($entities->firstWhere('name', 'Ashwater'))
         ->type->toBe(EntityType::Potion)
-        ->metadata->toBe(['rarity' => 'Uncommon', 'character' => 'Ironclad']);
+        ->metadata->toBe(['rarity' => 'Uncommon', 'character' => 'Ironclad'])
+        ->images->toBe([]);
 });
 
 it('strips classification suffixes from names', function () {

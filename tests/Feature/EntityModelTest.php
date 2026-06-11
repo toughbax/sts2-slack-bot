@@ -12,12 +12,14 @@ it('stores an entity with casts', function () {
         'description' => 'Deal 7 damage. Channel 1 Lightning.',
         'source_url' => 'https://sts2.untapped.gg/en/cards/ball-lightning',
         'metadata' => ['cost' => '1', 'rarity' => 'Common'],
+        'images' => ['portrait' => 'https://example.test/bl.png'],
         'provider' => 'untapped',
     ]);
 
     expect($entity->refresh())
         ->type->toBe(EntityType::Card)
-        ->metadata->toBe(['cost' => '1', 'rarity' => 'Common']);
+        ->metadata->toBe(['cost' => '1', 'rarity' => 'Common'])
+        ->images->toBe(['portrait' => 'https://example.test/bl.png']);
 });
 
 it('allows the same slug across types but not within one', function () {

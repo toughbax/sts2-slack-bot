@@ -25,7 +25,7 @@ final class FakeProvider implements ImportProvider
 beforeEach(function () {
     config()->set('sts.providers.fake', FakeProvider::class);
     FakeProvider::$entities = [
-        new ImportedEntity(EntityType::Card, 'Ball Lightning', 'Deal 7 damage.', 'https://example.test/bl', ['cost' => '1']),
+        new ImportedEntity(EntityType::Card, 'Ball Lightning', 'Deal 7 damage.', 'https://example.test/bl', ['cost' => '1'], images: ['portrait' => 'https://example.test/bl.png']),
         new ImportedEntity(EntityType::Relic, 'Akabeko', 'Gain 8 Vigor.'),
     ];
 });
@@ -39,7 +39,8 @@ it('creates entities from the provider', function () {
         ->and(Entity::firstWhere('slug', 'ball-lightning'))
         ->name->toBe('Ball Lightning')
         ->provider->toBe('fake')
-        ->metadata->toBe(['cost' => '1']);
+        ->metadata->toBe(['cost' => '1'])
+        ->images->toBe(['portrait' => 'https://example.test/bl.png']);
 });
 
 it('updates instead of duplicating on re-import', function () {
@@ -92,7 +93,8 @@ it('writes fixtures when asked', function () {
     $cards = json_decode(File::get($path.'/cards.json'), true);
     expect($cards)->toHaveCount(1)
         ->and($cards[0]['name'])->toBe('Ball Lightning')
-        ->and($cards[0]['metadata'])->toBe(['cost' => '1']);
+        ->and($cards[0]['metadata'])->toBe(['cost' => '1'])
+        ->and($cards[0]['images'])->toBe(['portrait' => 'https://example.test/bl.png']);
 
     File::deleteDirectory($path);
 });

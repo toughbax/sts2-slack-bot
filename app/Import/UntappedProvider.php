@@ -75,7 +75,9 @@ final class UntappedProvider implements ImportProvider
 
         [$description, $metadata] = $this->parseDescription($type, $description);
 
-        return new ImportedEntity($type, $name, $description, $url, $metadata, basename(parse_url($url, PHP_URL_PATH)));
+        $slug = basename(parse_url($url, PHP_URL_PATH));
+
+        return new ImportedEntity($type, $name, $description, $url, $metadata, $slug, images: $this->extractImages($html, $slug));
     }
 
     private function extractName(string $html): ?string
@@ -106,6 +108,34 @@ final class UntappedProvider implements ImportProvider
         }
 
         return null;
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    private function extractImages(string $html, string $slug): array
+    {
+        $underscored = str_replace('-', '_', $slug);
+
+        $images = [];
+
+        if (preg_match(
+            '#https://sts2json\.untapped\.gg/art/[a-z0-9_/.-]+/'.preg_quote($underscored, '#').'\.png#',
+            $html,
+            $m,
+        )) {
+            $images['portrait'] = $m[0];
+        }
+
+        if (preg_match(
+            '#https://img-preview\.untapped\.gg/[a-z0-9_/.-]+/'.preg_quote($slug, '#').'\.webp#',
+            $html,
+            $m,
+        )) {
+            $images['preview'] = $m[0];
+        }
+
+        return $images;
     }
 
     /**

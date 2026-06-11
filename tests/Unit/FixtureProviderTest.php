@@ -21,6 +21,7 @@ it('yields entities from every json file in the directory', function () {
         'description' => 'Deal 7 damage.',
         'source_url' => 'https://example.test/cards/ball-lightning',
         'metadata' => ['cost' => '1'],
+        'images' => ['portrait' => 'https://example.test/bl.png'],
     ]]));
     File::put($this->path.'/relics.json', json_encode([[
         'type' => 'relic',
@@ -35,10 +36,12 @@ it('yields entities from every json file in the directory', function () {
         ->type->toBe(EntityType::Card)
         ->slug->toBe('ball-lightning-x')
         ->metadata->toBe(['cost' => '1'])
+        ->images->toBe(['portrait' => 'https://example.test/bl.png'])
         ->and($entities->firstWhere('name', 'Akabeko'))
         ->slug->toBeNull()
         ->sourceUrl->toBeNull()
-        ->metadata->toBe([]);
+        ->metadata->toBe([])
+        ->images->toBe([]);
 });
 
 it('yields nothing from an empty directory', function () {

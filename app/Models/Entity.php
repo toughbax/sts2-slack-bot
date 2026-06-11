@@ -18,6 +18,7 @@ class Entity extends Model
         'description',
         'source_url',
         'metadata',
+        'images',
         'provider',
     ];
 
@@ -26,6 +27,7 @@ class Entity extends Model
         return [
             'type' => EntityType::class,
             'metadata' => 'array',
+            'images' => 'array',
         ];
     }
 }
