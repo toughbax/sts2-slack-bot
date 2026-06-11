@@ -32,7 +32,8 @@ it('ranks exact match above prefix above substring', function () {
 it('matches despite typos', function () {
     makeEntity('Hardstone');
 
-    expect($this->search->search('ardstone')->pluck('name')->all())
+    // 'hardstoen' is a transposition, not a substring, so this exercises the trigram branch.
+    expect($this->search->search('hardstoen')->pluck('name')->all())
         ->toContain('Hardstone');
 });
 
