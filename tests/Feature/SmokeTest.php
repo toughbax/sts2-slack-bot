@@ -1,5 +1,5 @@
 <?php
 
 it('boots the application', function () {
-    $this->get('/')->assertSuccessful();
+    $this->get('/up')->assertSuccessful();
 });
