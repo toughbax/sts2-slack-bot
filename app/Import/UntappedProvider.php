@@ -86,7 +86,9 @@ final class UntappedProvider implements ImportProvider
 
         $name = trim(explode('–', html_entity_decode($m[1], ENT_QUOTES))[0]);
 
-        return preg_replace('/\s*\(Event\)$/', '', $name) ?: null;
+        // Titles carry classification suffixes like "(Event)", "(Shop Relic)",
+        // "(Common Potion)" — noise we already capture as metadata.
+        return preg_replace('/\s*\([^)]*\)$/', '', $name) ?: null;
     }
 
     private function extractDescription(string $html): ?string

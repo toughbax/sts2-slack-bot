@@ -92,6 +92,23 @@ it('imports a relic and a potion with parsed metadata', function () {
         ->metadata->toBe(['rarity' => 'Uncommon', 'character' => 'Ironclad']);
 });
 
+it('strips classification suffixes from names', function () {
+    Http::fake([
+        BASE.'/sitemap/cards.xml' => Http::response(sitemapXml('cards', [])),
+        BASE.'/sitemap/relics.xml' => Http::response(sitemapXml('relics', ['toolbox'])),
+        BASE.'/sitemap/potions.xml' => Http::response(sitemapXml('potions', [])),
+        BASE.'/sitemap/events.xml' => Http::response(sitemapXml('events', [])),
+        BASE.'/en/relics/toolbox' => Http::response(detailHtml(
+            'Toolbox (Shop Relic) – Slay the Spire 2 Relic – Untapped.gg',
+            'Toolbox is a Shop relic in the Colorless pool: At the start of each combat, choose 1 of 3 random Colorless cards.',
+        )),
+    ]);
+
+    expect(collect($this->provider->entities())->first())
+        ->name->toBe('Toolbox')
+        ->metadata->toBe(['rarity' => 'Shop', 'character' => 'Colorless']);
+});
+
 it('imports an event from the flight payload', function () {
     Http::fake([
         BASE.'/sitemap/cards.xml' => Http::response(sitemapXml('cards', [])),
