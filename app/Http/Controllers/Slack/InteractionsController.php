@@ -38,7 +38,11 @@ class InteractionsController extends Controller
                 'text' => 'That entity no longer exists. Try /sts again.',
             ];
 
-        Http::post($responseUrl, $message);
+        $response = Http::post($responseUrl, $message);
+
+        if ($response->failed()) {
+            logger()->warning('Slack response_url delivery failed.', ['status' => $response->status()]);
+        }
 
         return response()->noContent();
     }
