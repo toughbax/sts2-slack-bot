@@ -115,20 +115,26 @@ final class UntappedProvider implements ImportProvider
      */
     private function extractImages(string $html, string $slug): array
     {
-        $underscored = str_replace('-', '_', $slug);
+        // Art basenames mix separators ("mad_science-chaos.png" for page slug
+        // "mad-science-chaos"), so each separator position matches - or _.
+        $flexibleSlug = implode('[-_]', array_map(
+            fn (string $part) => preg_quote($part, '#'),
+            preg_split('/-/', $slug) ?: [],
+        ));
 
         $images = [];
 
         if (preg_match(
-            '#https://sts2json\.untapped\.gg/art/[a-z0-9_/.-]+/'.preg_quote($underscored, '#').'\.png#',
+            '#https://sts2json\.untapped\.gg/art/[a-z0-9_/.-]+/'.$flexibleSlug.'\.png#',
             $html,
             $m,
         )) {
             $images['portrait'] = $m[0];
         }
 
+        // Previews are usually .webp but exist as .png for some cards.
         if (preg_match(
-            '#https://img-preview\.untapped\.gg/[a-z0-9_/.-]+/'.preg_quote($slug, '#').'\.webp#',
+            '#https://img-preview\.untapped\.gg/[a-z0-9_/.-]+/'.preg_quote($slug, '#').'\.(?:webp|png)#',
             $html,
             $m,
         )) {

@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Models\Entity;
 use Illuminate\Console\Command;
+use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Storage;
 
@@ -37,7 +38,13 @@ class DownloadEntityImages extends Command
                     usleep($delayMs * 1000);
                 }
 
-                $response = Http::timeout(30)->get($url);
+                try {
+                    $response = Http::timeout(30)->get($url);
+                } catch (ConnectionException $e) {
+                    $failed[] = "{$entity->type->value}/{$entity->slug} {$variant}: {$url} ({$e->getMessage()})";
+
+                    continue;
+                }
 
                 if ($response->failed()) {
                     $failed[] = "{$entity->type->value}/{$entity->slug} {$variant}: {$url} ({$response->status()})";

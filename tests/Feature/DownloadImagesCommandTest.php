@@ -78,6 +78,29 @@ it('reports failures and exits non-zero', function () {
     Storage::disk('public')->assertMissing('images/card/ghost-portrait.png');
 });
 
+it('treats connection errors as failures and keeps going', function () {
+    Entity::factory()->create([
+        'type' => EntityType::Card,
+        'slug' => 'unreachable',
+        'images' => ['portrait' => 'https://down.test/unreachable.png'],
+    ]);
+    Entity::factory()->create([
+        'type' => EntityType::Relic,
+        'slug' => 'akabeko',
+        'images' => ['portrait' => 'https://art.test/akabeko.png'],
+    ]);
+    Http::fake([
+        'https://down.test/*' => fn () => throw new Illuminate\Http\Client\ConnectionException('Could not resolve host'),
+        'https://art.test/*' => Http::response('png-bytes'),
+    ]);
+
+    $this->artisan('sts:images')
+        ->expectsOutputToContain('1 downloaded, 0 skipped, 1 failed')
+        ->assertFailed();
+
+    Storage::disk('public')->assertExists('images/relic/akabeko-portrait.png');
+});
+
 it('does nothing when entities have no images', function () {
     Entity::factory()->create(['images' => []]);
     Http::fake();

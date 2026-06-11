@@ -185,6 +185,34 @@ it('falls back gracefully when the description prefix does not parse', function 
         ->metadata->toBe([]);
 });
 
+it('matches art basenames with mixed separators and png previews', function () {
+    Http::fake([
+        BASE.'/sitemap/cards.xml' => Http::response(sitemapXml('cards', ['mad-science-chaos', 'wound'])),
+        BASE.'/sitemap/relics.xml' => Http::response(sitemapXml('relics', [])),
+        BASE.'/sitemap/potions.xml' => Http::response(sitemapXml('potions', [])),
+        BASE.'/sitemap/events.xml' => Http::response(sitemapXml('events', [])),
+        BASE.'/en/cards/mad-science-chaos' => Http::response(detailHtml(
+            'Mad Science – Slay the Spire 2 Card – Untapped.gg',
+            'Mad Science is a 1-Cost Special Skill card in the Event pool: Do chaos.',
+            null,
+            ['https://sts2json.untapped.gg/art/card_portraits/event/mad_science-chaos.png'],
+        )),
+        BASE.'/en/cards/wound' => Http::response(detailHtml(
+            'Wound – Slay the Spire 2 Card – Untapped.gg',
+            'Wound is a Status card: Unplayable.',
+            null,
+            ['https://img-preview.untapped.gg/sts2/en/cards/wound.png'],
+        )),
+    ]);
+
+    $entities = collect($this->provider->entities());
+
+    expect($entities->firstWhere('slug', 'mad-science-chaos'))
+        ->images->toBe(['portrait' => 'https://sts2json.untapped.gg/art/card_portraits/event/mad_science-chaos.png'])
+        ->and($entities->firstWhere('slug', 'wound'))
+        ->images->toBe(['preview' => 'https://img-preview.untapped.gg/sts2/en/cards/wound.png']);
+});
+
 it('keeps url slugs for entities with colliding display names', function () {
     Http::fake([
         BASE.'/sitemap/cards.xml' => Http::response(sitemapXml('cards', ['strike-ironclad', 'strike-silent'])),
