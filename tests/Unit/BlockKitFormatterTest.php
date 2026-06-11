@@ -85,3 +85,30 @@ it('renders a no-results message', function () {
     expect($payload['response_type'])->toBe('ephemeral')
         ->and($payload['text'])->toContain('zzqxv');
 });
+
+it('truncates an overlong name to the 150-char header limit', function () {
+    $blocks = $this->formatter->entityCard(fakeEntity(['name' => str_repeat('A', 200)]));
+
+    expect(mb_strlen($blocks[0]['text']['text']))->toBeLessThanOrEqual(150);
+});
+
+it('truncates an overlong description to the 3000-char section limit', function () {
+    $blocks = $this->formatter->entityCard(fakeEntity(['description' => str_repeat('x', 4000)]));
+
+    expect(mb_strlen($blocks[2]['text']['text']))->toBeLessThanOrEqual(3000);
+});
+
+it('escapes mrkdwn control characters in scraped text', function () {
+    $blocks = $this->formatter->entityCard(fakeEntity([
+        'description' => 'Deal damage equal to your <current> HP & more.',
+    ]));
+
+    expect($blocks[2]['text']['text'])
+        ->toBe('Deal damage equal to your &lt;current&gt; HP &amp; more.');
+});
+
+it('renders a placeholder for an empty description', function () {
+    $blocks = $this->formatter->entityCard(fakeEntity(['description' => '']));
+
+    expect($blocks[2]['text']['text'])->toBe('_(no description)_');
+});

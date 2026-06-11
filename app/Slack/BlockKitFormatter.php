@@ -15,10 +15,14 @@ class BlockKitFormatter
      */
     public function entityCard(Entity $entity): array
     {
+        $description = $entity->description === ''
+            ? '_(no description)_'
+            : Str::limit($this->escapeMrkdwn($entity->description), 2999, '…');
+
         $blocks = [
             [
                 'type' => 'header',
-                'text' => ['type' => 'plain_text', 'text' => $entity->name, 'emoji' => true],
+                'text' => ['type' => 'plain_text', 'text' => Str::limit($entity->name, 149, '…'), 'emoji' => true],
             ],
             [
                 'type' => 'context',
@@ -26,7 +30,7 @@ class BlockKitFormatter
             ],
             [
                 'type' => 'section',
-                'text' => ['type' => 'mrkdwn', 'text' => $entity->description],
+                'text' => ['type' => 'mrkdwn', 'text' => $description],
             ],
         ];
 
@@ -126,7 +130,7 @@ class BlockKitFormatter
     {
         return [
             'response_type' => 'ephemeral',
-            'text' => "No Slay the Spire 2 entities match \"{$query}\".",
+            'text' => 'No Slay the Spire 2 entities match "'.$this->escapeMrkdwn($query).'".',
         ];
     }
 
@@ -136,10 +140,10 @@ class BlockKitFormatter
 
         $parts = array_filter([
             $entity->type->label(),
-            $metadata['character'] ?? null,
-            $metadata['rarity'] ?? null,
-            isset($metadata['cost']) ? "{$metadata['cost']} Cost" : null,
-            $metadata['card_type'] ?? null,
+            isset($metadata['character']) ? $this->escapeMrkdwn($metadata['character']) : null,
+            isset($metadata['rarity']) ? $this->escapeMrkdwn($metadata['rarity']) : null,
+            isset($metadata['cost']) ? $this->escapeMrkdwn($metadata['cost']).' Cost' : null,
+            isset($metadata['card_type']) ? $this->escapeMrkdwn($metadata['card_type']) : null,
         ]);
 
         return implode(' · ', $parts);
@@ -148,5 +152,10 @@ class BlockKitFormatter
     private function optionLabel(Entity $entity): string
     {
         return Str::limit("{$entity->name} · {$entity->type->label()}", 70, '…');
+    }
+
+    private function escapeMrkdwn(string $text): string
+    {
+        return str_replace(['&', '<', '>'], ['&amp;', '&lt;', '&gt;'], $text);
     }
 }
