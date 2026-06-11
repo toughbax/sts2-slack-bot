@@ -42,3 +42,7 @@ it('returns no options for an empty query', function () {
         ->assertSuccessful()
         ->assertJsonCount(0, 'options');
 });
+
+it('rejects unsigned requests', function () {
+    $this->post('/slack/options', optionsPayload('ball'))->assertUnauthorized();
+});
