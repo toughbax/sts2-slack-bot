@@ -3,6 +3,7 @@
 use App\Enums\EntityType;
 use App\Models\Entity;
 use App\Slack\BlockKitFormatter;
+use Illuminate\Support\Facades\Storage;
 
 beforeEach(function () {
     $this->formatter = new BlockKitFormatter();
@@ -111,4 +112,61 @@ it('renders a placeholder for an empty description', function () {
     $blocks = $this->formatter->entityCard(fakeEntity(['description' => '']));
 
     expect($blocks[2]['text']['text'])->toBe('_(no description)_');
+});
+
+it('appends a full image block for cards when the image is downloaded', function () {
+    Storage::fake('public');
+    Storage::disk('public')->put('images/card/ball-lightning-portrait.png', 'bytes');
+
+    $blocks = $this->formatter->entityCard(fakeEntity([
+        'slug' => 'ball-lightning',
+        'images' => ['portrait' => 'https://art.test/ball_lightning.png'],
+    ]));
+
+    $image = collect($blocks)->firstWhere('type', 'image');
+    expect($image['image_url'])->toContain('/storage/images/card/ball-lightning-portrait.png')
+        ->and($image['alt_text'])->toBe('Ball Lightning')
+        ->and(end($blocks)['type'])->toBe('context'); // source link stays last
+});
+
+it('falls back to the other card variant when preferred is missing', function () {
+    config()->set('sts.card_image_variant', 'preview');
+    Storage::fake('public');
+    Storage::disk('public')->put('images/card/ball-lightning-portrait.png', 'bytes');
+
+    $blocks = $this->formatter->entityCard(fakeEntity([
+        'slug' => 'ball-lightning',
+        'images' => ['portrait' => 'https://art.test/ball_lightning.png'],
+    ]));
+
+    expect(collect($blocks)->firstWhere('type', 'image')['image_url'])
+        ->toContain('ball-lightning-portrait.png');
+});
+
+it('attaches a thumbnail accessory for non-card entities', function () {
+    Storage::fake('public');
+    Storage::disk('public')->put('images/relic/akabeko-portrait.png', 'bytes');
+
+    $blocks = $this->formatter->entityCard(fakeEntity([
+        'type' => EntityType::Relic,
+        'name' => 'Akabeko',
+        'slug' => 'akabeko',
+        'images' => ['portrait' => 'https://art.test/akabeko.png'],
+    ]));
+
+    $section = collect($blocks)->firstWhere('type', 'section');
+    expect($section['accessory']['type'])->toBe('image')
+        ->and($section['accessory']['image_url'])->toContain('akabeko-portrait.png')
+        ->and(collect($blocks)->firstWhere('type', 'image'))->toBeNull();
+});
+
+it('renders without images when none are downloaded', function () {
+    Storage::fake('public');
+
+    $blocks = $this->formatter->entityCard(fakeEntity([
+        'slug' => 'ball-lightning',
+        'images' => ['portrait' => 'https://art.test/ball_lightning.png'],
+    ]));
+
+    expect(collect($blocks)->firstWhere('type', 'image'))->toBeNull();
 });

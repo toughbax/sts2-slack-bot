@@ -25,8 +25,7 @@ class DownloadEntityImages extends Command
 
         foreach (Entity::query()->whereNotNull('images')->get() as $entity) {
             foreach ($entity->images ?? [] as $variant => $url) {
-                $extension = pathinfo((string) parse_url($url, PHP_URL_PATH), PATHINFO_EXTENSION) ?: 'png';
-                $path = "images/{$entity->type->value}/{$entity->slug}-{$variant}.{$extension}";
+                $path = $entity->imagePath($variant);
 
                 if (! $this->option('force') && $disk->exists($path)) {
                     $skipped++;

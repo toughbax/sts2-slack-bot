@@ -12,9 +12,12 @@ single workspace, no auth beyond Slack request signing.
     touch database/database.sqlite
     php artisan migrate
     php artisan sts:import          # loads the committed fixture data
+    php artisan storage:link
+    php artisan sts:images          # downloads entity art for Slack cards
 
 Set `SLACK_SIGNING_SECRET` in `.env` (Slack app → Basic Information →
-Signing Secret).
+Signing Secret). `APP_URL` must be the public HTTPS host — Slack loads entity
+images from `{APP_URL}/storage/...`.
 
 ## Slack app configuration
 
@@ -40,6 +43,9 @@ Providers implement `App\Import\ImportProvider` and are registered in
 `config/sts.php`. Enemies and enchants have no source on untapped.gg yet; the
 schema supports them, so a future provider (or hand-written fixture file in
 `database/data/`) can add them.
+
+`STS_CARD_IMAGE_VARIANT=portrait|preview` picks which card image Slack shows
+(portrait art vs the full rendered card frame).
 
 ## Tests
 

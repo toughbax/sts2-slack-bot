@@ -2,6 +2,7 @@
 
 namespace App\Slack;
 
+use App\Enums\EntityType;
 use App\Models\Entity;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
@@ -19,6 +20,17 @@ class BlockKitFormatter
             ? '_(no description)_'
             : Str::limit($this->escapeMrkdwn($entity->description), 2999, '…');
 
+        $isCard = $entity->type === EntityType::Card;
+
+        $sectionBlock = ['type' => 'section', 'text' => ['type' => 'mrkdwn', 'text' => $description]];
+
+        if (! $isCard) {
+            $thumbUrl = $entity->localImageUrl('portrait');
+            if ($thumbUrl !== null) {
+                $sectionBlock['accessory'] = ['type' => 'image', 'image_url' => $thumbUrl, 'alt_text' => $entity->name];
+            }
+        }
+
         $blocks = [
             [
                 'type' => 'header',
@@ -28,11 +40,15 @@ class BlockKitFormatter
                 'type' => 'context',
                 'elements' => [['type' => 'mrkdwn', 'text' => $this->contextLine($entity)]],
             ],
-            [
-                'type' => 'section',
-                'text' => ['type' => 'mrkdwn', 'text' => $description],
-            ],
+            $sectionBlock,
         ];
+
+        if ($isCard) {
+            $imageUrl = $this->resolveCardImageUrl($entity);
+            if ($imageUrl !== null) {
+                $blocks[] = ['type' => 'image', 'image_url' => $imageUrl, 'alt_text' => $entity->name];
+            }
+        }
 
         if ($entity->source_url) {
             $host = parse_url($entity->source_url, PHP_URL_HOST);
@@ -152,6 +168,14 @@ class BlockKitFormatter
     private function optionLabel(Entity $entity): string
     {
         return Str::limit("{$entity->name} · {$entity->type->label()}", 70, '…');
+    }
+
+    private function resolveCardImageUrl(Entity $entity): ?string
+    {
+        $preferred = (string) config('sts.card_image_variant', 'portrait');
+        $fallback = $preferred === 'portrait' ? 'preview' : 'portrait';
+
+        return $entity->localImageUrl($preferred) ?? $entity->localImageUrl($fallback);
     }
 
     private function escapeMrkdwn(string $text): string

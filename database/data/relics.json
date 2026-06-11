@@ -8,6 +8,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/akabeko.png"
         }
     },
     {
@@ -19,6 +22,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/alchemical_coffer.png"
         }
     },
     {
@@ -30,6 +36,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/amethyst_aubergine.png"
         }
     },
     {
@@ -41,6 +50,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/anchor.png"
         }
     },
     {
@@ -52,6 +64,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/arcane_scroll.png"
         }
     },
     {
@@ -63,6 +78,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/archaic_tooth.png"
         }
     },
     {
@@ -74,6 +92,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/art_of_war.png"
         }
     },
     {
@@ -85,6 +106,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/astrolabe.png"
         }
     },
     {
@@ -96,6 +120,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/bag_of_marbles.png"
         }
     },
     {
@@ -107,6 +134,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/bag_of_preparation.png"
         }
     },
     {
@@ -118,6 +148,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/beating_remnant.png"
         }
     },
     {
@@ -129,6 +162,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/beautiful_bracelet.png"
         }
     },
     {
@@ -140,6 +176,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/bellows.png"
         }
     },
     {
@@ -151,6 +190,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/belt_buckle.png"
         }
     },
     {
@@ -162,6 +204,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Necrobinder"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/big_hat.png"
         }
     },
     {
@@ -173,6 +218,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/big_mushroom.png"
         }
     },
     {
@@ -184,6 +232,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/biiig_hug.png"
         }
     },
     {
@@ -195,6 +246,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/bing_bong.png"
         }
     },
     {
@@ -206,6 +260,9 @@
         "metadata": {
             "rarity": "Starter",
             "character": "Ironclad"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/black_blood.png"
         }
     },
     {
@@ -217,6 +274,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/black_star.png"
         }
     },
     {
@@ -228,6 +288,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/blessed_antler.png"
         }
     },
     {
@@ -239,6 +302,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/blood_soaked_rose.png"
         }
     },
     {
@@ -250,6 +316,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/blood_vial.png"
         }
     },
     {
@@ -261,6 +330,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Necrobinder"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/bone_flute.png"
         }
     },
     {
@@ -272,6 +344,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/bone_tea.png"
         }
     },
     {
@@ -283,6 +358,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/book_of_five_rings.png"
         }
     },
     {
@@ -294,6 +372,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Necrobinder"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/book_repair_knife.png"
         }
     },
     {
@@ -305,6 +386,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Necrobinder"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/bookmark.png"
         }
     },
     {
@@ -316,6 +400,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/booming_conch.png"
         }
     },
     {
@@ -327,6 +414,9 @@
         "metadata": {
             "rarity": "Starter",
             "character": "Necrobinder"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/bound_phylactery.png"
         }
     },
     {
@@ -338,6 +428,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/bowler_hat.png"
         }
     },
     {
@@ -349,6 +442,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/bread.png"
         }
     },
     {
@@ -360,6 +456,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/brilliant_scarf.png"
         }
     },
     {
@@ -371,6 +470,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Ironclad"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/brimstone.png"
         }
     },
     {
@@ -382,6 +484,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/bronze_scales.png"
         }
     },
     {
@@ -393,6 +498,9 @@
         "metadata": {
             "rarity": "Starter",
             "character": "Ironclad"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/burning_blood.png"
         }
     },
     {
@@ -404,6 +512,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/burning_sticks.png"
         }
     },
     {
@@ -415,6 +526,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/byrdpip.png"
         }
     },
     {
@@ -426,6 +540,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/calling_bell.png"
         }
     },
     {
@@ -437,6 +554,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/candelabra.png"
         }
     },
     {
@@ -448,6 +568,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/captains_wheel.png"
         }
     },
     {
@@ -459,6 +582,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/cauldron.png"
         }
     },
     {
@@ -470,6 +596,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/centennial_puzzle.png"
         }
     },
     {
@@ -481,6 +610,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/chandelier.png"
         }
     },
     {
@@ -492,6 +624,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Ironclad"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/charons_ashes.png"
         }
     },
     {
@@ -503,6 +638,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/chemical_x.png"
         }
     },
     {
@@ -514,6 +652,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/choices_paradox.png"
         }
     },
     {
@@ -525,6 +666,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/chosen_cheese.png"
         }
     },
     {
@@ -536,6 +680,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/claws.png"
         }
     },
     {
@@ -547,6 +694,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/cloak_clasp.png"
         }
     },
     {
@@ -558,6 +708,9 @@
         "metadata": {
             "rarity": "Starter",
             "character": "Defect"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/cracked_core.png"
         }
     },
     {
@@ -569,6 +722,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/crossbow.png"
         }
     },
     {
@@ -580,6 +736,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/cursed_pearl.png"
         }
     },
     {
@@ -591,6 +750,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/darkstone_periapt.png"
         }
     },
     {
@@ -602,6 +764,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Defect"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/data_disk.png"
         }
     },
     {
@@ -613,6 +778,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/daughter_of_the_wind.png"
         }
     },
     {
@@ -624,6 +792,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/delicate_frond.png"
         }
     },
     {
@@ -635,6 +806,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Ironclad"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/demon_tongue.png"
         }
     },
     {
@@ -646,6 +820,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/diamond_diadem.png"
         }
     },
     {
@@ -657,6 +834,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/dingy_rug.png"
         }
     },
     {
@@ -668,6 +848,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/distinguished_cape.png"
         }
     },
     {
@@ -679,6 +862,9 @@
         "metadata": {
             "rarity": "Starter",
             "character": "Regent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/divine_destiny.png"
         }
     },
     {
@@ -690,6 +876,9 @@
         "metadata": {
             "rarity": "Starter",
             "character": "Regent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/divine_right.png"
         }
     },
     {
@@ -701,6 +890,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/dollys_mirror.png"
         }
     },
     {
@@ -712,6 +904,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/dragon_fruit.png"
         }
     },
     {
@@ -723,6 +918,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/dream_catcher.png"
         }
     },
     {
@@ -734,6 +932,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/driftwood.png"
         }
     },
     {
@@ -745,6 +946,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/dusty_tome.png"
         }
     },
     {
@@ -756,6 +960,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/ectoplasm.png"
         }
     },
     {
@@ -767,6 +974,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/electric_shrymp.png"
         }
     },
     {
@@ -778,6 +988,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/ember_tea.png"
         }
     },
     {
@@ -789,6 +1002,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Defect"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/emotion_chip.png"
         }
     },
     {
@@ -800,6 +1016,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/empty_cage.png"
         }
     },
     {
@@ -811,6 +1030,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/eternal_feather.png"
         }
     },
     {
@@ -822,6 +1044,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/fake_anchor.png"
         }
     },
     {
@@ -833,6 +1058,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/fake_blood_vial.png"
         }
     },
     {
@@ -844,6 +1072,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/fake_happy_flower.png"
         }
     },
     {
@@ -855,6 +1086,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/fake_lees_waffle.png"
         }
     },
     {
@@ -866,6 +1100,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/fake_mango.png"
         }
     },
     {
@@ -877,6 +1114,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/fake_merchants_rug.png"
         }
     },
     {
@@ -888,6 +1128,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/fake_orichalcum.png"
         }
     },
     {
@@ -899,6 +1142,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/fake_snecko_eye.png"
         }
     },
     {
@@ -910,6 +1156,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/fake_strike_dummy.png"
         }
     },
     {
@@ -921,6 +1170,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/fake_venerable_tea_set.png"
         }
     },
     {
@@ -932,6 +1184,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Regent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/fencing_manual.png"
         }
     },
     {
@@ -943,6 +1198,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/festive_popper.png"
         }
     },
     {
@@ -954,6 +1212,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/fiddle.png"
         }
     },
     {
@@ -965,6 +1226,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/forgotten_soul.png"
         }
     },
     {
@@ -976,6 +1240,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/fragrant_mushroom.png"
         }
     },
     {
@@ -987,6 +1254,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/fresnel_lens.png"
         }
     },
     {
@@ -998,6 +1268,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/frozen_egg.png"
         }
     },
     {
@@ -1009,6 +1282,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Necrobinder"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/funerary_mask.png"
         }
     },
     {
@@ -1020,6 +1296,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/fur_coat.png"
         }
     },
     {
@@ -1031,6 +1310,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Regent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/galactic_dust.png"
         }
     },
     {
@@ -1042,6 +1324,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/gambling_chip.png"
         }
     },
     {
@@ -1053,6 +1338,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/game_piece.png"
         }
     },
     {
@@ -1064,6 +1352,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/ghost_seed.png"
         }
     },
     {
@@ -1075,6 +1366,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/girya.png"
         }
     },
     {
@@ -1086,6 +1380,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/glass_eye.png"
         }
     },
     {
@@ -1097,6 +1394,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/glitter.png"
         }
     },
     {
@@ -1108,6 +1408,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/gnarled_hammer.png"
         }
     },
     {
@@ -1119,6 +1422,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Defect"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/gold_plated_cables.png"
         }
     },
     {
@@ -1130,6 +1436,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/golden_compass.png"
         }
     },
     {
@@ -1141,6 +1450,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/golden_pearl.png"
         }
     },
     {
@@ -1152,6 +1464,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/gorget.png"
         }
     },
     {
@@ -1163,6 +1478,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/gremlin_horn.png"
         }
     },
     {
@@ -1174,6 +1492,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/hand_drill.png"
         }
     },
     {
@@ -1185,6 +1506,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/happy_flower.png"
         }
     },
     {
@@ -1196,6 +1520,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/hefty_tablet.png"
         }
     },
     {
@@ -1207,6 +1534,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Silent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/helical_dart.png"
         }
     },
     {
@@ -1218,6 +1548,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/history_course.png"
         }
     },
     {
@@ -1229,6 +1562,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/horn_cleat.png"
         }
     },
     {
@@ -1240,6 +1576,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/ice_cream.png"
         }
     },
     {
@@ -1251,6 +1590,9 @@
         "metadata": {
             "rarity": "Starter",
             "character": "Defect"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/infused_core.png"
         }
     },
     {
@@ -1262,6 +1604,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/intimidating_helmet.png"
         }
     },
     {
@@ -1273,6 +1618,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/iron_club.png"
         }
     },
     {
@@ -1284,6 +1632,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Necrobinder"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/ivory_tile.png"
         }
     },
     {
@@ -1295,6 +1646,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/jeweled_mask.png"
         }
     },
     {
@@ -1306,6 +1660,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/jewelry_box.png"
         }
     },
     {
@@ -1317,6 +1674,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/joss_paper.png"
         }
     },
     {
@@ -1328,6 +1688,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/juzu_bracelet.png"
         }
     },
     {
@@ -1339,6 +1702,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/kifuda.png"
         }
     },
     {
@@ -1350,6 +1716,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/kunai.png"
         }
     },
     {
@@ -1361,6 +1730,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/kusarigama.png"
         }
     },
     {
@@ -1372,6 +1744,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/lantern.png"
         }
     },
     {
@@ -1383,6 +1758,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/large_capsule.png"
         }
     },
     {
@@ -1394,6 +1772,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/lasting_candy.png"
         }
     },
     {
@@ -1405,6 +1786,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/lava_lamp.png"
         }
     },
     {
@@ -1416,6 +1800,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/lava_rock.png"
         }
     },
     {
@@ -1427,6 +1814,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/lead_paperweight.png"
         }
     },
     {
@@ -1438,6 +1828,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/leafy_poultice.png"
         }
     },
     {
@@ -1449,6 +1842,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/lees_waffle.png"
         }
     },
     {
@@ -1460,6 +1856,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/letter_opener.png"
         }
     },
     {
@@ -1471,6 +1870,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/lizard_tail.png"
         }
     },
     {
@@ -1482,6 +1884,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/looming_fruit.png"
         }
     },
     {
@@ -1493,6 +1898,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/lords_parasol.png"
         }
     },
     {
@@ -1504,6 +1912,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/lost_coffer.png"
         }
     },
     {
@@ -1515,6 +1926,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/lost_wisp.png"
         }
     },
     {
@@ -1526,6 +1940,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/lucky_fysh.png"
         }
     },
     {
@@ -1537,6 +1954,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Regent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/lunar_pastry.png"
         }
     },
     {
@@ -1548,6 +1968,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/mango.png"
         }
     },
     {
@@ -1559,6 +1982,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/massive_scroll.png"
         }
     },
     {
@@ -1570,6 +1996,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/maw_bank.png"
         }
     },
     {
@@ -1581,6 +2010,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/meal_ticket.png"
         }
     },
     {
@@ -1592,6 +2024,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/meat_cleaver.png"
         }
     },
     {
@@ -1603,6 +2038,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/meat_on_the_bone.png"
         }
     },
     {
@@ -1614,6 +2052,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/membership_card.png"
         }
     },
     {
@@ -1625,6 +2066,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/mercury_hourglass.png"
         }
     },
     {
@@ -1636,6 +2080,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Defect"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/metronome.png"
         }
     },
     {
@@ -1647,6 +2094,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Regent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/mini_regent.png"
         }
     },
     {
@@ -1658,6 +2108,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/miniature_cannon.png"
         }
     },
     {
@@ -1669,6 +2122,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/miniature_tent.png"
         }
     },
     {
@@ -1680,6 +2136,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/molten_egg.png"
         }
     },
     {
@@ -1691,6 +2150,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/mr_struggles.png"
         }
     },
     {
@@ -1702,6 +2164,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/mummified_hand.png"
         }
     },
     {
@@ -1713,6 +2178,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/music_box.png"
         }
     },
     {
@@ -1724,6 +2192,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/mystic_lighter.png"
         }
     },
     {
@@ -1735,6 +2206,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/neows_bones.png"
         }
     },
     {
@@ -1746,6 +2220,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/neows_talisman.png"
         }
     },
     {
@@ -1757,6 +2234,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/neows_torment.png"
         }
     },
     {
@@ -1768,6 +2248,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/new_leaf.png"
         }
     },
     {
@@ -1779,6 +2262,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Silent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/ninja_scroll.png"
         }
     },
     {
@@ -1790,6 +2276,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/nunchaku.png"
         }
     },
     {
@@ -1801,6 +2290,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/nutritious_oyster.png"
         }
     },
     {
@@ -1812,6 +2304,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/nutritious_soup.png"
         }
     },
     {
@@ -1823,6 +2318,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/oddly_smooth_stone.png"
         }
     },
     {
@@ -1834,6 +2332,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/old_coin.png"
         }
     },
     {
@@ -1845,6 +2346,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Regent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/orange_dough.png"
         }
     },
     {
@@ -1856,6 +2360,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/orichalcum.png"
         }
     },
     {
@@ -1867,6 +2374,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/ornamental_fan.png"
         }
     },
     {
@@ -1878,6 +2388,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/orrery.png"
         }
     },
     {
@@ -1889,6 +2402,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/paels_blood.png"
         }
     },
     {
@@ -1900,6 +2416,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/paels_claw.png"
         }
     },
     {
@@ -1911,6 +2430,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/paels_eye.png"
         }
     },
     {
@@ -1922,6 +2444,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/paels_flesh.png"
         }
     },
     {
@@ -1933,6 +2458,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/paels_growth.png"
         }
     },
     {
@@ -1944,6 +2472,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/paels_horn.png"
         }
     },
     {
@@ -1955,6 +2486,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/paels_legion.png"
         }
     },
     {
@@ -1966,6 +2500,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/paels_tears.png"
         }
     },
     {
@@ -1977,6 +2514,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/paels_tooth.png"
         }
     },
     {
@@ -1988,6 +2528,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/paels_wing.png"
         }
     },
     {
@@ -1999,6 +2542,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/pandoras_box.png"
         }
     },
     {
@@ -2010,6 +2556,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/pantograph.png"
         }
     },
     {
@@ -2021,6 +2570,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Silent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/paper_krane.png"
         }
     },
     {
@@ -2032,6 +2584,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Ironclad"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/paper_phrog.png"
         }
     },
     {
@@ -2043,6 +2598,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/parrying_shield.png"
         }
     },
     {
@@ -2054,6 +2612,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/pear.png"
         }
     },
     {
@@ -2065,6 +2626,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/pen_nib.png"
         }
     },
     {
@@ -2076,6 +2640,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/pendulum.png"
         }
     },
     {
@@ -2087,6 +2654,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/permafrost.png"
         }
     },
     {
@@ -2098,6 +2668,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/petrified_toad.png"
         }
     },
     {
@@ -2109,6 +2682,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/phial_holster.png"
         }
     },
     {
@@ -2120,6 +2696,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/philosophers_stone.png"
         }
     },
     {
@@ -2131,6 +2710,9 @@
         "metadata": {
             "rarity": "Starter",
             "character": "Necrobinder"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/phylactery_unbound.png"
         }
     },
     {
@@ -2142,6 +2724,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/planisphere.png"
         }
     },
     {
@@ -2153,6 +2738,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/pocketwatch.png"
         }
     },
     {
@@ -2164,6 +2752,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/pollinous_core.png"
         }
     },
     {
@@ -2175,6 +2766,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/pomander.png"
         }
     },
     {
@@ -2186,6 +2780,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/potion_belt.png"
         }
     },
     {
@@ -2197,6 +2794,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Defect"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/power_cell.png"
         }
     },
     {
@@ -2208,6 +2808,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/prayer_wheel.png"
         }
     },
     {
@@ -2219,6 +2822,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/precarious_shears.png"
         }
     },
     {
@@ -2230,6 +2836,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/precise_scissors.png"
         }
     },
     {
@@ -2241,6 +2850,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/preserved_fog.png"
         }
     },
     {
@@ -2252,6 +2864,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/prismatic_gem.png"
         }
     },
     {
@@ -2263,6 +2878,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/pumpkin_candle.png"
         }
     },
     {
@@ -2274,6 +2892,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/punch_dagger.png"
         }
     },
     {
@@ -2285,6 +2906,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/radiant_pearl.png"
         }
     },
     {
@@ -2296,6 +2920,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/rainbow_ring.png"
         }
     },
     {
@@ -2307,6 +2934,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/razor_tooth.png"
         }
     },
     {
@@ -2318,6 +2948,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/red_mask.png"
         }
     },
     {
@@ -2329,6 +2962,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Ironclad"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/red_skull.png"
         }
     },
     {
@@ -2340,6 +2976,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/regal_pillow.png"
         }
     },
     {
@@ -2351,6 +2990,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Regent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/regalite.png"
         }
     },
     {
@@ -2362,6 +3004,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/reptile_trinket.png"
         }
     },
     {
@@ -2373,6 +3018,9 @@
         "metadata": {
             "rarity": "Starter",
             "character": "Silent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/ring_of_the_drake.png"
         }
     },
     {
@@ -2384,6 +3032,9 @@
         "metadata": {
             "rarity": "Starter",
             "character": "Silent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/ring_of_the_snake.png"
         }
     },
     {
@@ -2395,6 +3046,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/ringing_triangle.png"
         }
     },
     {
@@ -2406,6 +3060,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/ripple_basin.png"
         }
     },
     {
@@ -2417,6 +3074,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/royal_poison.png"
         }
     },
     {
@@ -2428,6 +3088,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/royal_stamp.png"
         }
     },
     {
@@ -2439,6 +3102,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Ironclad"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/ruined_helmet.png"
         }
     },
     {
@@ -2450,6 +3116,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Defect"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/runic_capacitor.png"
         }
     },
     {
@@ -2461,6 +3130,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/runic_pyramid.png"
         }
     },
     {
@@ -2472,6 +3144,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/sai.png"
         }
     },
     {
@@ -2483,6 +3158,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/sand_castle.png"
         }
     },
     {
@@ -2494,6 +3172,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/screaming_flagon.png"
         }
     },
     {
@@ -2505,6 +3186,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/scroll_boxes.png"
         }
     },
     {
@@ -2516,6 +3200,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/sea_glass.png"
         }
     },
     {
@@ -2527,6 +3214,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/seal_of_gold.png"
         }
     },
     {
@@ -2538,6 +3228,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Ironclad"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/self_forming_clay.png"
         }
     },
     {
@@ -2549,6 +3242,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/sere_talon.png"
         }
     },
     {
@@ -2560,6 +3256,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/shovel.png"
         }
     },
     {
@@ -2571,6 +3270,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/shuriken.png"
         }
     },
     {
@@ -2582,6 +3284,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/signet_ring.png"
         }
     },
     {
@@ -2593,6 +3298,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/silver_crucible.png"
         }
     },
     {
@@ -2604,6 +3312,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/sling_of_courage.png"
         }
     },
     {
@@ -2615,6 +3326,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/small_capsule.png"
         }
     },
     {
@@ -2626,6 +3340,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/snecko_eye.png"
         }
     },
     {
@@ -2637,6 +3354,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Silent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/snecko_skull.png"
         }
     },
     {
@@ -2648,6 +3368,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/sozu.png"
         }
     },
     {
@@ -2659,6 +3382,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/sparkling_rouge.png"
         }
     },
     {
@@ -2670,6 +3396,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/spiked_gauntlets.png"
         }
     },
     {
@@ -2681,6 +3410,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/stone_calendar.png"
         }
     },
     {
@@ -2692,6 +3424,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/stone_cracker.png"
         }
     },
     {
@@ -2703,6 +3438,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/stone_humidifier.png"
         }
     },
     {
@@ -2714,6 +3452,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/storybook.png"
         }
     },
     {
@@ -2725,6 +3466,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/strawberry.png"
         }
     },
     {
@@ -2736,6 +3480,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/strike_dummy.png"
         }
     },
     {
@@ -2747,6 +3494,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/sturdy_clamp.png"
         }
     },
     {
@@ -2758,6 +3508,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/sword_of_jade.png"
         }
     },
     {
@@ -2769,6 +3522,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/sword_of_stone.png"
         }
     },
     {
@@ -2780,6 +3536,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Defect"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/symbiotic_virus.png"
         }
     },
     {
@@ -2791,6 +3550,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/tanxs_whistle.png"
         }
     },
     {
@@ -2802,6 +3564,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/tea_of_discourtesy.png"
         }
     },
     {
@@ -2813,6 +3578,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/the_abacus.png"
         }
     },
     {
@@ -2824,6 +3592,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/the_boot.png"
         }
     },
     {
@@ -2835,6 +3606,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/the_courier.png"
         }
     },
     {
@@ -2846,6 +3620,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/throwing_axe.png"
         }
     },
     {
@@ -2857,6 +3634,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Silent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/tingsha.png"
         }
     },
     {
@@ -2868,6 +3648,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/tiny_mailbox.png"
         }
     },
     {
@@ -2879,6 +3662,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/toasty_mittens.png"
         }
     },
     {
@@ -2890,6 +3676,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/toolbox.png"
         }
     },
     {
@@ -2901,6 +3690,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/touch_of_orobas.png"
         }
     },
     {
@@ -2912,6 +3704,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Silent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/tough_bandages.png"
         }
     },
     {
@@ -2923,6 +3718,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/toxic_egg.png"
         }
     },
     {
@@ -2934,6 +3732,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/toy_box.png"
         }
     },
     {
@@ -2945,6 +3746,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/tri_boomerang.png"
         }
     },
     {
@@ -2956,6 +3760,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/tungsten_rod.png"
         }
     },
     {
@@ -2967,6 +3774,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/tuning_fork.png"
         }
     },
     {
@@ -2978,6 +3788,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Silent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/twisted_funnel.png"
         }
     },
     {
@@ -2989,6 +3802,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/unceasing_top.png"
         }
     },
     {
@@ -3000,6 +3816,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Necrobinder"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/undying_sigil.png"
         }
     },
     {
@@ -3011,6 +3830,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/unsettling_lamp.png"
         }
     },
     {
@@ -3022,6 +3844,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/vajra.png"
         }
     },
     {
@@ -3033,6 +3858,9 @@
         "metadata": {
             "rarity": "Uncommon",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/vambrace.png"
         }
     },
     {
@@ -3044,6 +3872,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/velvet_choker.png"
         }
     },
     {
@@ -3055,6 +3886,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/venerable_tea_set.png"
         }
     },
     {
@@ -3066,6 +3900,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/very_hot_cocoa.png"
         }
     },
     {
@@ -3077,6 +3914,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/vexing_puzzlebox.png"
         }
     },
     {
@@ -3088,6 +3928,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Regent"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/vitruvian_minion.png"
         }
     },
     {
@@ -3099,6 +3942,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/war_hammer.png"
         }
     },
     {
@@ -3110,6 +3956,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/war_paint.png"
         }
     },
     {
@@ -3121,6 +3970,9 @@
         "metadata": {
             "rarity": "Common",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/whetstone.png"
         }
     },
     {
@@ -3132,6 +3984,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/whispering_earring.png"
         }
     },
     {
@@ -3143,6 +3998,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/white_beast_statue.png"
         }
     },
     {
@@ -3154,6 +4012,9 @@
         "metadata": {
             "rarity": "Rare",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/white_star.png"
         }
     },
     {
@@ -3165,6 +4026,9 @@
         "metadata": {
             "rarity": "Shop",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/wing_charm.png"
         }
     },
     {
@@ -3176,6 +4040,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/winged_boots.png"
         }
     },
     {
@@ -3187,6 +4054,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/wongo_customer_appreciation_badge.png"
         }
     },
     {
@@ -3198,6 +4068,9 @@
         "metadata": {
             "rarity": "Event",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/wongos_mystery_ticket.png"
         }
     },
     {
@@ -3209,6 +4082,9 @@
         "metadata": {
             "rarity": "Ancient",
             "character": "Colorless"
+        },
+        "images": {
+            "portrait": "https://sts2json.untapped.gg/art/relics/yummy_cookie.png"
         }
     }
 ]
