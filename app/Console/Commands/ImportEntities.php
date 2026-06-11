@@ -33,7 +33,7 @@ class ImportEntities extends Command
 
         foreach ($provider->entities() as $imported) {
             $entity = Entity::updateOrCreate(
-                ['type' => $imported->type, 'slug' => Str::slug($imported->name)],
+                ['type' => $imported->type, 'slug' => $imported->slug ?? Str::slug($imported->name)],
                 [
                     'name' => $imported->name,
                     'description' => $imported->description,
@@ -69,6 +69,7 @@ class ImportEntities extends Command
                 $records = $entities->map(fn (Entity $entity) => [
                     'type' => $entity->type->value,
                     'name' => $entity->name,
+                    'slug' => $entity->slug,
                     'description' => $entity->description,
                     'source_url' => $entity->source_url,
                     'metadata' => $entity->metadata ?? [],

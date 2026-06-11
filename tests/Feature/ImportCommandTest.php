@@ -69,6 +69,19 @@ it('fails on an unknown provider', function () {
         ->assertFailed();
 });
 
+it('uses provider-supplied slugs to keep colliding names distinct', function () {
+    FakeProvider::$entities = [
+        new ImportedEntity(EntityType::Card, 'Strike', 'Deal 6 damage.', null, [], 'strike-ironclad'),
+        new ImportedEntity(EntityType::Card, 'Strike', 'Deal 6 damage.', null, [], 'strike-silent'),
+    ];
+
+    $this->artisan('sts:import', ['--provider' => 'fake'])
+        ->expectsOutputToContain('2 created, 0 updated')
+        ->assertSuccessful();
+
+    expect(Entity::count())->toBe(2);
+});
+
 it('writes fixtures when asked', function () {
     $path = storage_path('framework/testing/fixtures-'.uniqid());
     config()->set('sts.fixture_path', $path);

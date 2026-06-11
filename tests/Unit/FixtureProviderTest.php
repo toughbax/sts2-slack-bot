@@ -17,6 +17,7 @@ it('yields entities from every json file in the directory', function () {
     File::put($this->path.'/cards.json', json_encode([[
         'type' => 'card',
         'name' => 'Ball Lightning',
+        'slug' => 'ball-lightning-x',
         'description' => 'Deal 7 damage.',
         'source_url' => 'https://example.test/cards/ball-lightning',
         'metadata' => ['cost' => '1'],
@@ -32,8 +33,10 @@ it('yields entities from every json file in the directory', function () {
     expect($entities)->toHaveCount(2)
         ->and($entities->firstWhere('name', 'Ball Lightning'))
         ->type->toBe(EntityType::Card)
+        ->slug->toBe('ball-lightning-x')
         ->metadata->toBe(['cost' => '1'])
         ->and($entities->firstWhere('name', 'Akabeko'))
+        ->slug->toBeNull()
         ->sourceUrl->toBeNull()
         ->metadata->toBe([]);
 });

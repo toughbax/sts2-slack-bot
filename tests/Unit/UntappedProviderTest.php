@@ -54,6 +54,7 @@ it('imports a card with parsed metadata', function () {
         ->and($entities->first())
         ->type->toBe(EntityType::Card)
         ->name->toBe('Ball Lightning')
+        ->slug->toBe('ball-lightning')
         ->description->toBe('Deal 7 damage. Channel 1 Lightning.')
         ->sourceUrl->toBe(BASE.'/en/cards/ball-lightning')
         ->metadata->toBe([
@@ -163,4 +164,26 @@ it('falls back gracefully when the description prefix does not parse', function 
         ->name->toBe('Weird Card')
         ->description->toBe('Some unstructured description text.')
         ->metadata->toBe([]);
+});
+
+it('keeps url slugs for entities with colliding display names', function () {
+    Http::fake([
+        BASE.'/sitemap/cards.xml' => Http::response(sitemapXml('cards', ['strike-ironclad', 'strike-silent'])),
+        BASE.'/sitemap/relics.xml' => Http::response(sitemapXml('relics', [])),
+        BASE.'/sitemap/potions.xml' => Http::response(sitemapXml('potions', [])),
+        BASE.'/sitemap/events.xml' => Http::response(sitemapXml('events', [])),
+        BASE.'/en/cards/strike-ironclad' => Http::response(detailHtml(
+            'Strike – Ironclad Starter Attack – Slay the Spire 2 Card – Untapped.gg',
+            'Strike is a 1-Cost Starter Attack card in the Ironclad pool: Deal 6 damage.',
+        )),
+        BASE.'/en/cards/strike-silent' => Http::response(detailHtml(
+            'Strike – Silent Starter Attack – Slay the Spire 2 Card – Untapped.gg',
+            'Strike is a 1-Cost Starter Attack card in the Silent pool: Deal 6 damage.',
+        )),
+    ]);
+
+    $entities = collect($this->provider->entities());
+
+    expect($entities)->toHaveCount(2)
+        ->and($entities->pluck('slug')->all())->toBe(['strike-ironclad', 'strike-silent']);
 });

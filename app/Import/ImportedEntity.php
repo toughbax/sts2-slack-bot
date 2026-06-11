@@ -15,5 +15,6 @@ final readonly class ImportedEntity
         public string $description,
         public ?string $sourceUrl = null,
         public array $metadata = [],
+        public ?string $slug = null,
     ) {}
 }

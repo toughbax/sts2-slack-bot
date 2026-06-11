@@ -29,6 +29,7 @@ final class FixtureProvider implements ImportProvider
                     description: $record['description'],
                     sourceUrl: $record['source_url'] ?? null,
                     metadata: $record['metadata'] ?? [],
+                    slug: $record['slug'] ?? null,
                 );
             }
         }

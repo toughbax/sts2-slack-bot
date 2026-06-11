@@ -75,7 +75,7 @@ final class UntappedProvider implements ImportProvider
 
         [$description, $metadata] = $this->parseDescription($type, $description);
 
-        return new ImportedEntity($type, $name, $description, $url, $metadata);
+        return new ImportedEntity($type, $name, $description, $url, $metadata, basename(parse_url($url, PHP_URL_PATH)));
     }
 
     private function extractName(string $html): ?string
