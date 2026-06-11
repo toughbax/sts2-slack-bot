@@ -74,12 +74,14 @@ class ImportEntities extends Command
                     'metadata' => $entity->metadata ?? [],
                 ])->values();
 
+                $file = Str::plural($type).'.json';
+
                 File::put(
-                    "{$path}/{$type}s.json",
+                    "{$path}/{$file}",
                     $records->toJson(JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE),
                 );
 
-                $this->line("Wrote {$entities->count()} {$type}s to {$type}s.json");
+                $this->line("Wrote {$entities->count()} to {$file}");
             });
     }
 }
