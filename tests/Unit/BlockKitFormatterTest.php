@@ -55,7 +55,7 @@ it('renders a search response with did-you-mean buttons', function () {
 
     $payload = $this->formatter->searchResponse($top, collect([$other]));
 
-    $actions = collect($payload['blocks'])->firstWhere('type', 'actions');
+    $actions = collect($payload['blocks'])->firstWhere('block_id', 'sts_did_you_mean');
     expect($payload['response_type'])->toBe('ephemeral')
         ->and($actions['elements'][0]['value'])->toBe('8')
         ->and($actions['elements'][0]['action_id'])->toBe('sts_entity_button_8')
@@ -65,7 +65,7 @@ it('renders a search response with did-you-mean buttons', function () {
 it('renders a search response without buttons when unambiguous', function () {
     $payload = $this->formatter->searchResponse(fakeEntity(), collect());
 
-    expect(collect($payload['blocks'])->firstWhere('type', 'actions'))->toBeNull();
+    expect(collect($payload['blocks'])->firstWhere('block_id', 'sts_did_you_mean'))->toBeNull();
 });
 
 it('renders options for the external select', function () {
@@ -180,4 +180,38 @@ it('shows the upgraded description for cards that have one', function () {
     expect($sections)->toHaveCount(2)
         ->and($sections[1]['text']['text'])->toBe('*Upgraded (Ball Lightning+):* Deal 10 damage &amp; more.')
         ->and(end($blocks)['type'])->toBe('context');
+});
+
+it('adds a share button to search responses', function () {
+    $payload = $this->formatter->searchResponse(fakeEntity(), collect());
+
+    $share = collect($payload['blocks'])->firstWhere('block_id', 'sts_share');
+    expect($share['elements'][0]['action_id'])->toBe('sts_share_button_7')
+        ->and($share['elements'][0]['value'])->toBe('7');
+});
+
+it('keeps the share button before did-you-mean blocks', function () {
+    $other = fakeEntity(['id' => 8, 'name' => 'Ball of Fire']);
+
+    $payload = $this->formatter->searchResponse(fakeEntity(), collect([$other]));
+
+    $blockIds = collect($payload['blocks'])->pluck('block_id')->filter()->values()->all();
+    expect($blockIds)->toBe(['sts_share', 'sts_did_you_mean']);
+});
+
+it('builds an ephemeral card with a share button', function () {
+    $payload = $this->formatter->ephemeralCard(fakeEntity());
+
+    expect($payload['response_type'])->toBe('ephemeral')
+        ->and($payload['replace_original'])->toBeTrue()
+        ->and(collect($payload['blocks'])->firstWhere('block_id', 'sts_share'))->not->toBeNull();
+});
+
+it('builds a public shared card without buttons', function () {
+    $payload = $this->formatter->sharedCard(fakeEntity(), 'U123');
+
+    expect($payload['response_type'])->toBe('in_channel')
+        ->and($payload['replace_original'])->toBeFalse()
+        ->and(collect($payload['blocks'])->firstWhere('type', 'actions'))->toBeNull()
+        ->and(collect($payload['blocks'])->last()['elements'][0]['text'])->toBe('Shared by <@U123>');
 });

@@ -105,6 +105,8 @@ class BlockKitFormatter
     {
         $blocks = $this->entityCard($top);
 
+        $blocks[] = $this->shareActions($top);
+
         if ($others->isNotEmpty()) {
             $blocks[] = [
                 'type' => 'context',
@@ -129,6 +131,41 @@ class BlockKitFormatter
         return [
             'response_type' => 'ephemeral',
             'text' => $top->name,
+            'blocks' => $blocks,
+        ];
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    public function ephemeralCard(Entity $entity): array
+    {
+        return [
+            'response_type' => 'ephemeral',
+            'replace_original' => true,
+            'text' => $entity->name,
+            'blocks' => [...$this->entityCard($entity), $this->shareActions($entity)],
+        ];
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    public function sharedCard(Entity $entity, ?string $userId): array
+    {
+        $blocks = $this->entityCard($entity);
+
+        if ($userId !== null) {
+            $blocks[] = [
+                'type' => 'context',
+                'elements' => [['type' => 'mrkdwn', 'text' => "Shared by <@{$userId}>"]],
+            ];
+        }
+
+        return [
+            'response_type' => 'in_channel',
+            'replace_original' => false,
+            'text' => $entity->name,
             'blocks' => $blocks,
         ];
     }
@@ -197,5 +234,23 @@ class BlockKitFormatter
     private function escapeMrkdwn(string $text): string
     {
         return str_replace(['&', '<', '>'], ['&amp;', '&lt;', '&gt;'], $text);
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    private function shareActions(Entity $entity): array
+    {
+        return [
+            'type' => 'actions',
+            'block_id' => 'sts_share',
+            'elements' => [[
+                'type' => 'button',
+                'style' => 'primary',
+                'action_id' => "sts_share_button_{$entity->id}",
+                'text' => ['type' => 'plain_text', 'text' => 'Share to channel'],
+                'value' => (string) $entity->id,
+            ]],
+        ];
     }
 }
