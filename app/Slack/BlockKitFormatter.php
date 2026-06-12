@@ -167,7 +167,13 @@ class BlockKitFormatter
 
     private function optionLabel(Entity $entity): string
     {
-        return Str::limit("{$entity->name} · {$entity->type->label()}", 70, '…');
+        $parts = array_filter([
+            $entity->name,
+            $entity->type->label(),
+            $entity->metadata['character'] ?? null,
+        ]);
+
+        return Str::limit(implode(' · ', $parts), 70, '…');
     }
 
     private function resolveCardImageUrl(Entity $entity): ?string

@@ -25,6 +25,22 @@ it('returns fuzzy-matched options', function () {
         ->assertJsonPath('options.0.text.text', 'Ball Lightning · Card');
 });
 
+it('disambiguates same-named cards by character', function () {
+    Entity::factory()->create([
+        'type' => EntityType::Card, 'name' => 'Strike', 'slug' => 'strike-ironclad',
+        'metadata' => ['character' => 'Ironclad'],
+    ]);
+    Entity::factory()->create([
+        'type' => EntityType::Card, 'name' => 'Strike', 'slug' => 'strike-silent',
+        'metadata' => ['character' => 'Silent'],
+    ]);
+
+    $this->postSlack('/slack/options', optionsPayload('strike'))
+        ->assertSuccessful()
+        ->assertJsonPath('options.0.text.text', 'Strike · Card · Ironclad')
+        ->assertJsonPath('options.1.text.text', 'Strike · Card · Silent');
+});
+
 it('caps options at 25', function () {
     foreach (range(1, 30) as $i) {
         Entity::factory()->create(['type' => EntityType::Card, 'name' => "Fireball {$i}", 'slug' => "fireball-{$i}"]);

@@ -59,7 +59,7 @@ it('renders a search response with did-you-mean buttons', function () {
     expect($payload['response_type'])->toBe('ephemeral')
         ->and($actions['elements'][0]['value'])->toBe('8')
         ->and($actions['elements'][0]['action_id'])->toBe('sts_entity_button_8')
-        ->and($actions['elements'][0]['text']['text'])->toBe('Ball of Fire · Potion');
+        ->and($actions['elements'][0]['text']['text'])->toBe('Ball of Fire · Potion · Defect');
 });
 
 it('renders a search response without buttons when unambiguous', function () {
@@ -75,8 +75,8 @@ it('renders options for the external select', function () {
     $payload = $this->formatter->options(collect([$card, $relic]));
 
     expect($payload['options'])->toBe([
-        ['text' => ['type' => 'plain_text', 'text' => 'Ball Lightning · Card'], 'value' => '7'],
-        ['text' => ['type' => 'plain_text', 'text' => 'Anchor · Relic'], 'value' => '9'],
+        ['text' => ['type' => 'plain_text', 'text' => 'Ball Lightning · Card · Defect'], 'value' => '7'],
+        ['text' => ['type' => 'plain_text', 'text' => 'Anchor · Relic · Defect'], 'value' => '9'],
     ]);
 });
 
