@@ -4,6 +4,22 @@ use App\Enums\EntityType;
 use App\Models\Entity;
 use Illuminate\Support\Facades\Storage;
 
+it('returns the comparison path for a card and null for a non-card', function () {
+    $card = Entity::factory()->make([
+        'type' => EntityType::Card,
+        'slug' => 'ball-lightning',
+        'images' => [],
+    ]);
+    $relic = Entity::factory()->make([
+        'type' => EntityType::Relic,
+        'slug' => 'akabeko',
+        'images' => [],
+    ]);
+
+    expect($card->imagePath('comparison'))->toBe('images/card/ball-lightning-comparison.png')
+        ->and($relic->imagePath('comparison'))->toBeNull();
+});
+
 it('derives the local image path from the remote url', function () {
     $entity = Entity::factory()->make([
         'type' => EntityType::Card,

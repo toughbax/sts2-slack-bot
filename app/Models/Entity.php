@@ -34,6 +34,10 @@ class Entity extends Model
 
     public function imagePath(string $variant): ?string
     {
+        if ($variant === 'comparison') {
+            return $this->type === EntityType::Card ? "images/card/{$this->slug}-comparison.png" : null;
+        }
+
         $url = $this->images[$variant] ?? null;
 
         if ($url === null) {

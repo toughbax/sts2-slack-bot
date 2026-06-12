@@ -44,8 +44,7 @@ Providers implement `App\Import\ImportProvider` and are registered in
 schema supports them, so a future provider (or hand-written fixture file in
 `database/data/`) can add them.
 
-`STS_CARD_IMAGE_VARIANT=portrait|preview` picks which card image Slack shows
-(portrait art vs the full rendered card frame).
+`STS_CARD_IMAGE_VARIANT=portrait|preview|comparison` picks which card image Slack shows (portrait art, the rendered card frame, or base+upgraded side by side).
 
 ## Tests
 

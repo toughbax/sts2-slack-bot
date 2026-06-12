@@ -227,14 +227,18 @@ it('captures the upgraded description for cards', function () {
             'Ball Lightning – Defect Common Attack – Slay the Spire 2 Card – Untapped.gg',
             'Ball Lightning is a 1-Cost Common Attack card in the Defect pool: Deal 7 damage. Channel 1 Lightning.',
             null,
-            [],
+            [
+                'https://sts2json.untapped.gg/art/card_portraits/defect/ball_lightning.png',
+                'https://img-preview.untapped.gg/sts2/en/cards/ball-lightning.webp',
+            ],
             '<span><span>Deal </span><span class="x__upgrade">10</span><span> damage. Channel <img alt="Lightning" src="/x.png"/> 1.</span></span>',
         )),
     ]);
 
     $entity = collect($this->provider->entities())->first();
 
-    expect($entity->metadata['upgraded_description'])->toBe('Deal 10 damage. Channel Lightning 1.');
+    expect($entity->metadata['upgraded_description'])->toBe('Deal 10 damage. Channel Lightning 1.')
+        ->and($entity->images['preview_upgraded'])->toBe('https://img-preview.untapped.gg/sts2/en/cards/ball-lightning-upgraded.webp');
 });
 
 it('keeps url slugs for entities with colliding display names', function () {

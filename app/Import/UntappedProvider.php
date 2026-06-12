@@ -85,7 +85,13 @@ final class UntappedProvider implements ImportProvider
 
         $slug = basename(parse_url($url, PHP_URL_PATH));
 
-        return new ImportedEntity($type, $name, $description, $url, $metadata, $slug, images: $this->extractImages($html, $slug));
+        $images = $this->extractImages($html, $slug);
+
+        if ($type === EntityType::Card && isset($metadata['upgraded_description'], $images['preview'])) {
+            $images['preview_upgraded'] = preg_replace('/\.(webp|png)$/', '-upgraded.$1', $images['preview']);
+        }
+
+        return new ImportedEntity($type, $name, $description, $url, $metadata, $slug, images: $images);
     }
 
     private function extractName(string $html): ?string

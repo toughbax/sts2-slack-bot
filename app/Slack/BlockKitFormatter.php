@@ -190,9 +190,22 @@ class BlockKitFormatter
     private function resolveCardImageUrl(Entity $entity): ?string
     {
         $preferred = (string) config('sts.card_image_variant', 'portrait');
-        $fallback = $preferred === 'portrait' ? 'preview' : 'portrait';
 
-        return $entity->localImageUrl($preferred) ?? $entity->localImageUrl($fallback);
+        $chain = match ($preferred) {
+            'comparison' => ['comparison', 'preview', 'portrait'],
+            'preview' => ['preview', 'portrait'],
+            default => ['portrait', 'preview'],
+        };
+
+        foreach ($chain as $variant) {
+            $url = $entity->localImageUrl($variant);
+
+            if ($url !== null) {
+                return $url;
+            }
+        }
+
+        return null;
     }
 
     private function escapeMrkdwn(string $text): string

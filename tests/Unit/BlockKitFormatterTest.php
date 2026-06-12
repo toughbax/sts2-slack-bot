@@ -171,6 +171,21 @@ it('renders without images when none are downloaded', function () {
     expect(collect($blocks)->firstWhere('type', 'image'))->toBeNull();
 });
 
+it('prefers the comparison image when configured', function () {
+    config()->set('sts.card_image_variant', 'comparison');
+    Storage::fake('public');
+    Storage::disk('public')->put('images/card/ball-lightning-comparison.png', 'bytes');
+    Storage::disk('public')->put('images/card/ball-lightning-portrait.png', 'bytes');
+
+    $blocks = $this->formatter->entityCard(fakeEntity([
+        'slug' => 'ball-lightning',
+        'images' => ['portrait' => 'https://art.test/ball_lightning.png'],
+    ]));
+
+    expect(collect($blocks)->firstWhere('type', 'image')['image_url'])
+        ->toContain('ball-lightning-comparison.png');
+});
+
 it('shows the upgraded description for cards that have one', function () {
     $blocks = $this->formatter->entityCard(fakeEntity([
         'metadata' => ['character' => 'Defect', 'upgraded_description' => 'Deal 10 damage & more.'],

@@ -24,7 +24,7 @@ it('downloads every image variant to the public disk', function () {
     ]);
 
     $this->artisan('sts:images')
-        ->expectsOutputToContain('2 downloaded, 0 skipped, 0 failed')
+        ->expectsOutputToContain('2 downloaded, 0 skipped, 0 composed, 0 failed')
         ->assertSuccessful();
 
     Storage::disk('public')->assertExists('images/card/ball-lightning-portrait.png');
@@ -42,7 +42,7 @@ it('skips images that already exist', function () {
     Http::fake();
 
     $this->artisan('sts:images')
-        ->expectsOutputToContain('0 downloaded, 1 skipped, 0 failed')
+        ->expectsOutputToContain('0 downloaded, 1 skipped, 0 composed, 0 failed')
         ->assertSuccessful();
 
     Http::assertNothingSent();
@@ -72,7 +72,7 @@ it('reports failures and exits non-zero', function () {
     Http::fake(['https://art.test/*' => Http::response('', 404)]);
 
     $this->artisan('sts:images')
-        ->expectsOutputToContain('0 downloaded, 0 skipped, 1 failed')
+        ->expectsOutputToContain('0 downloaded, 0 skipped, 0 composed, 1 failed')
         ->assertFailed();
 
     Storage::disk('public')->assertMissing('images/card/ghost-portrait.png');
@@ -95,7 +95,7 @@ it('treats connection errors as failures and keeps going', function () {
     ]);
 
     $this->artisan('sts:images')
-        ->expectsOutputToContain('1 downloaded, 0 skipped, 1 failed')
+        ->expectsOutputToContain('1 downloaded, 0 skipped, 0 composed, 1 failed')
         ->assertFailed();
 
     Storage::disk('public')->assertExists('images/relic/akabeko-portrait.png');
@@ -106,8 +106,40 @@ it('does nothing when entities have no images', function () {
     Http::fake();
 
     $this->artisan('sts:images')
-        ->expectsOutputToContain('0 downloaded, 0 skipped, 0 failed')
+        ->expectsOutputToContain('0 downloaded, 0 skipped, 0 composed, 0 failed')
         ->assertSuccessful();
 
     Http::assertNothingSent();
+});
+
+it('composes side-by-side comparison images for upgraded cards', function () {
+    $png = function (int $w, int $h): string {
+        $img = imagecreatetruecolor($w, $h);
+        ob_start();
+        imagepng($img);
+
+        return (string) ob_get_clean();
+    };
+
+    Entity::factory()->create([
+        'type' => EntityType::Card,
+        'slug' => 'ball-lightning',
+        'metadata' => ['upgraded_description' => 'Deal 10 damage.'],
+        'images' => [
+            'preview' => 'https://preview.test/ball-lightning.png',
+            'preview_upgraded' => 'https://preview.test/ball-lightning-upgraded.png',
+        ],
+    ]);
+    Http::fake([
+        'https://preview.test/ball-lightning.png' => Http::response($png(100, 150)),
+        'https://preview.test/ball-lightning-upgraded.png' => Http::response($png(100, 150)),
+    ]);
+
+    $this->artisan('sts:images')
+        ->expectsOutputToContain('2 downloaded, 0 skipped, 1 composed, 0 failed')
+        ->assertSuccessful();
+
+    Storage::disk('public')->assertExists('images/card/ball-lightning-comparison.png');
+    [$w, $h] = getimagesizefromstring(Storage::disk('public')->get('images/card/ball-lightning-comparison.png'));
+    expect($w)->toBe(216)->and($h)->toBe(150); // 100 + 16 gutter + 100
 });
