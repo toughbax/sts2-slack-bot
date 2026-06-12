@@ -13,7 +13,6 @@ single workspace, no auth beyond Slack request signing.
     php artisan migrate
     php artisan sts:import          # loads the committed fixture data
     php artisan storage:link
-    php artisan sts:images          # downloads entity art for Slack cards
 
 Set `SLACK_SIGNING_SECRET` in `.env` (Slack app → Basic Information →
 Signing Secret). `APP_URL` must be the public HTTPS host — Slack loads entity
@@ -44,7 +43,17 @@ Providers implement `App\Import\ImportProvider` and are registered in
 schema supports them, so a future provider (or hand-written fixture file in
 `database/data/`) can add them.
 
-`STS_CARD_IMAGE_VARIANT=portrait|preview|comparison` picks which card image Slack shows (portrait art, the rendered card frame, or base+upgraded side by side).
+Data refresh is done **locally by a maintainer**:
+
+    php artisan sts:import --provider=untapped --save-fixtures
+    php artisan sts:images --prune
+
+Then commit `database/data` and `storage/app/public/images`. Servers only ever
+`git pull` — they never run `sts:images`.
+
+Cards display a side-by-side base/upgraded comparison image (or the plain card
+frame for cards without an upgrade); other entity types show their art as a
+thumbnail.
 
 ## Tests
 

@@ -17,6 +17,4 @@ return [
         'base_url' => env('STS_UNTAPPED_BASE_URL', 'https://sts2.untapped.gg'),
         'delay_ms' => (int) env('STS_UNTAPPED_DELAY_MS', 150),
     ],
-
-    'card_image_variant' => env('STS_CARD_IMAGE_VARIANT', 'portrait'),
 ];

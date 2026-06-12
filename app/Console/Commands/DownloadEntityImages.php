@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Storage;
 class DownloadEntityImages extends Command
 {
     protected $signature = 'sts:images
-        {--force : Re-download images that already exist locally}';
+        {--force : Re-download images that already exist locally}
+        {--prune : After composing, delete intermediates not needed for serving}';
 
     protected $description = 'Download entity images from their remote URLs to the public disk';
 
@@ -61,7 +62,9 @@ class DownloadEntityImages extends Command
 
         $composed = $this->composeComparisons($disk, $failed);
 
-        $this->info("Images: {$downloaded} downloaded, {$skipped} skipped, {$composed} composed, ".count($failed).' failed.');
+        $pruned = $this->option('prune') ? $this->pruneIntermediates($disk) : 0;
+
+        $this->info("Images: {$downloaded} downloaded, {$skipped} skipped, {$composed} composed, {$pruned} pruned, ".count($failed).' failed.');
 
         foreach ($failed as $line) {
             $this->warn($line);
@@ -130,6 +133,30 @@ class DownloadEntityImages extends Command
         }
 
         return $composed;
+    }
+
+    private function pruneIntermediates(Filesystem $disk): int
+    {
+        $pruned = 0;
+
+        foreach (Entity::query()->where('type', EntityType::Card)->get() as $entity) {
+            $comparisonExists = $disk->exists("images/card/{$entity->slug}-comparison.png");
+
+            $candidates = array_filter([
+                $entity->imagePath('portrait'),
+                $entity->imagePath('preview_upgraded'),
+                $comparisonExists ? $entity->imagePath('preview') : null,
+            ]);
+
+            foreach ($candidates as $path) {
+                if ($disk->exists($path)) {
+                    $disk->delete($path);
+                    $pruned++;
+                }
+            }
+        }
+
+        return $pruned;
     }
 
     private function readImage(string $bytes, string $path): ?\GdImage

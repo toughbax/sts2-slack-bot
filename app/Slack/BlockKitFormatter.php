@@ -189,23 +189,9 @@ class BlockKitFormatter
 
     private function resolveCardImageUrl(Entity $entity): ?string
     {
-        $preferred = (string) config('sts.card_image_variant', 'portrait');
-
-        $chain = match ($preferred) {
-            'comparison' => ['comparison', 'preview', 'portrait'],
-            'preview' => ['preview', 'portrait'],
-            default => ['portrait', 'preview'],
-        };
-
-        foreach ($chain as $variant) {
-            $url = $entity->localImageUrl($variant);
-
-            if ($url !== null) {
-                return $url;
-            }
-        }
-
-        return null;
+        // Side-by-side base/upgraded render, or the plain card frame for
+        // cards that have no upgrade.
+        return $entity->localImageUrl('comparison') ?? $entity->localImageUrl('preview');
     }
 
     private function escapeMrkdwn(string $text): string

@@ -116,31 +116,17 @@ it('renders a placeholder for an empty description', function () {
 
 it('appends a full image block for cards when the image is downloaded', function () {
     Storage::fake('public');
-    Storage::disk('public')->put('images/card/ball-lightning-portrait.png', 'bytes');
+    Storage::disk('public')->put('images/card/ball-lightning-preview.png', 'bytes');
 
     $blocks = $this->formatter->entityCard(fakeEntity([
         'slug' => 'ball-lightning',
-        'images' => ['portrait' => 'https://art.test/ball_lightning.png'],
+        'images' => ['preview' => 'https://preview.test/ball-lightning.png'],
     ]));
 
     $image = collect($blocks)->firstWhere('type', 'image');
-    expect($image['image_url'])->toContain('/storage/images/card/ball-lightning-portrait.png')
+    expect($image['image_url'])->toContain('/storage/images/card/ball-lightning-preview.png')
         ->and($image['alt_text'])->toBe('Ball Lightning')
         ->and(end($blocks)['type'])->toBe('context'); // source link stays last
-});
-
-it('falls back to the other card variant when preferred is missing', function () {
-    config()->set('sts.card_image_variant', 'preview');
-    Storage::fake('public');
-    Storage::disk('public')->put('images/card/ball-lightning-portrait.png', 'bytes');
-
-    $blocks = $this->formatter->entityCard(fakeEntity([
-        'slug' => 'ball-lightning',
-        'images' => ['portrait' => 'https://art.test/ball_lightning.png'],
-    ]));
-
-    expect(collect($blocks)->firstWhere('type', 'image')['image_url'])
-        ->toContain('ball-lightning-portrait.png');
 });
 
 it('attaches a thumbnail accessory for non-card entities', function () {
@@ -165,21 +151,20 @@ it('renders without images when none are downloaded', function () {
 
     $blocks = $this->formatter->entityCard(fakeEntity([
         'slug' => 'ball-lightning',
-        'images' => ['portrait' => 'https://art.test/ball_lightning.png'],
+        'images' => ['preview' => 'https://preview.test/ball-lightning.png'],
     ]));
 
     expect(collect($blocks)->firstWhere('type', 'image'))->toBeNull();
 });
 
-it('prefers the comparison image when configured', function () {
-    config()->set('sts.card_image_variant', 'comparison');
+it('prefers the comparison image over the plain preview', function () {
     Storage::fake('public');
     Storage::disk('public')->put('images/card/ball-lightning-comparison.png', 'bytes');
-    Storage::disk('public')->put('images/card/ball-lightning-portrait.png', 'bytes');
+    Storage::disk('public')->put('images/card/ball-lightning-preview.png', 'bytes');
 
     $blocks = $this->formatter->entityCard(fakeEntity([
         'slug' => 'ball-lightning',
-        'images' => ['portrait' => 'https://art.test/ball_lightning.png'],
+        'images' => ['preview' => 'https://preview.test/ball-lightning.png'],
     ]));
 
     expect(collect($blocks)->firstWhere('type', 'image')['image_url'])
