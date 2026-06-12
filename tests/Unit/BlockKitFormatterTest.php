@@ -170,3 +170,14 @@ it('renders without images when none are downloaded', function () {
 
     expect(collect($blocks)->firstWhere('type', 'image'))->toBeNull();
 });
+
+it('shows the upgraded description for cards that have one', function () {
+    $blocks = $this->formatter->entityCard(fakeEntity([
+        'metadata' => ['character' => 'Defect', 'upgraded_description' => 'Deal 10 damage & more.'],
+    ]));
+
+    $sections = collect($blocks)->where('type', 'section')->values();
+    expect($sections)->toHaveCount(2)
+        ->and($sections[1]['text']['text'])->toBe('*Upgraded (Ball Lightning+):* Deal 10 damage &amp; more.')
+        ->and(end($blocks)['type'])->toBe('context');
+});

@@ -75,6 +75,14 @@ final class UntappedProvider implements ImportProvider
 
         [$description, $metadata] = $this->parseDescription($type, $description);
 
+        if ($type === EntityType::Card) {
+            $upgraded = $this->extractUpgradedDescription($html);
+
+            if ($upgraded !== null) {
+                $metadata['upgraded_description'] = $upgraded;
+            }
+        }
+
         $slug = basename(parse_url($url, PHP_URL_PATH));
 
         return new ImportedEntity($type, $name, $description, $url, $metadata, $slug, images: $this->extractImages($html, $slug));
@@ -142,6 +150,20 @@ final class UntappedProvider implements ImportProvider
         }
 
         return $images;
+    }
+
+    private function extractUpgradedDescription(string $html): ?string
+    {
+        if (! preg_match('/__upgradeDetails[^>]*>(.*?)<\/div>/su', $html, $m)) {
+            return null;
+        }
+
+        $text = preg_replace('/<img[^>]*\salt="([^"]*)"[^>]*>/u', ' $1 ', $m[1]);
+        $text = strip_tags($text);
+        $text = html_entity_decode($text, ENT_QUOTES);
+        $text = trim(preg_replace('/\s+/u', ' ', $text));
+
+        return $text !== '' ? $text : null;
     }
 
     /**

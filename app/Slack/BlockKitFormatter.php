@@ -44,6 +44,17 @@ class BlockKitFormatter
         ];
 
         if ($isCard) {
+            $upgraded = $entity->metadata['upgraded_description'] ?? null;
+            if (! empty($upgraded)) {
+                $blocks[] = [
+                    'type' => 'section',
+                    'text' => [
+                        'type' => 'mrkdwn',
+                        'text' => Str::limit('*Upgraded ('.$entity->name.'+):* '.$this->escapeMrkdwn($upgraded), 2999, '…'),
+                    ],
+                ];
+            }
+
             $imageUrl = $this->resolveCardImageUrl($entity);
             if ($imageUrl !== null) {
                 $blocks[] = ['type' => 'image', 'image_url' => $imageUrl, 'alt_text' => $entity->name];

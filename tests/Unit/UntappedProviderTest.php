@@ -15,7 +15,7 @@ function sitemapXml(string $section, array $slugs): string
     return '<?xml version="1.0" encoding="UTF-8"?><urlset>'.$urls.'</urlset>';
 }
 
-function detailHtml(string $title, ?string $metaDescription, ?string $flightDescription = null, array $imageUrls = []): string
+function detailHtml(string $title, ?string $metaDescription, ?string $flightDescription = null, array $imageUrls = [], ?string $upgradeHtml = null): string
 {
     $meta = $metaDescription !== null
         ? '<meta name="description" content="'.e($metaDescription).'"/>'
@@ -34,7 +34,11 @@ function detailHtml(string $title, ?string $metaDescription, ?string $flightDesc
         $imgs .= '<img src="'.$url.'"/>';
     }
 
-    return "<html><head><title>{$title}</title>{$meta}</head><body>{$flight}{$imgs}</body></html>";
+    $upgrade = $upgradeHtml !== null
+        ? '<div class="page-module-scss-module__b7ZTOq__upgradeDetails">'.$upgradeHtml.'</div>'
+        : '';
+
+    return "<html><head><title>{$title}</title>{$meta}</head><body>{$flight}{$imgs}{$upgrade}</body></html>";
 }
 
 beforeEach(function () {
@@ -211,6 +215,26 @@ it('matches art basenames with mixed separators and png previews', function () {
         ->images->toBe(['portrait' => 'https://sts2json.untapped.gg/art/card_portraits/event/mad_science-chaos.png'])
         ->and($entities->firstWhere('slug', 'wound'))
         ->images->toBe(['preview' => 'https://img-preview.untapped.gg/sts2/en/cards/wound.png']);
+});
+
+it('captures the upgraded description for cards', function () {
+    Http::fake([
+        BASE.'/sitemap/cards.xml' => Http::response(sitemapXml('cards', ['ball-lightning'])),
+        BASE.'/sitemap/relics.xml' => Http::response(sitemapXml('relics', [])),
+        BASE.'/sitemap/potions.xml' => Http::response(sitemapXml('potions', [])),
+        BASE.'/sitemap/events.xml' => Http::response(sitemapXml('events', [])),
+        BASE.'/en/cards/ball-lightning' => Http::response(detailHtml(
+            'Ball Lightning – Defect Common Attack – Slay the Spire 2 Card – Untapped.gg',
+            'Ball Lightning is a 1-Cost Common Attack card in the Defect pool: Deal 7 damage. Channel 1 Lightning.',
+            null,
+            [],
+            '<span><span>Deal </span><span class="x__upgrade">10</span><span> damage. Channel <img alt="Lightning" src="/x.png"/> 1.</span></span>',
+        )),
+    ]);
+
+    $entity = collect($this->provider->entities())->first();
+
+    expect($entity->metadata['upgraded_description'])->toBe('Deal 10 damage. Channel Lightning 1.');
 });
 
 it('keeps url slugs for entities with colliding display names', function () {
